@@ -223,7 +223,7 @@ main {
 }
 
 .icon {
-  margin: 32px 0px;
+  margin: 32px 8px;
   width: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -233,9 +233,10 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  color: #464646;
-  text-shadow: 1px 2px 2px whitesmoke;
-  font-size: 90%;
+  color: black;
+  text-shadow: 1px 2px 8px whitesmoke;
+  text-shadow: 1px 1px 8px whitesmoke;
+  font-size: 100%;
 }
 
 @media screen and (max-width: 780px) {
@@ -247,7 +248,7 @@ main {
     display: none;
   }
   .icon img {
-    width: 40px;
+    width: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
