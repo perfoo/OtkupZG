@@ -46,25 +46,59 @@ header {
           box-shadow: 0px 8px 16px  darkgreen;
 }
 
-header h1 {
-  color: #ffff00;
-  margin: 40px 60px;
-  text-shadow: 8px 8px 24px black;
-  text-shadow: 8px 8px 48px black;
-  text-shadow: 8px 8px 24px black;
-  text-shadow: 0px 0px 16px black;
+#h1-h2 {
+  color: #2b2a2a44;
   text-align: left;
+  -webkit-animation: shadow 1.5s ease-in forwards;
+          animation: shadow 1.5s ease-in forwards;
+  text-shadow: none;
+}
+
+#h1-h2 h1 {
+  margin: 40px 60px;
   font-size: 3.2rem;
 }
 
-header h2 {
-  color: #ffff00;
+#h1-h2 h2 {
   margin: 20px 0px 40px 60px;
-  text-shadow: 8px 8px 24px black;
-  text-shadow: 8px 8px 48px black;
-  text-shadow: 8px 8px 24px black;
-  text-shadow: 0px 0px 16px black;
-  text-align: left;
+}
+
+@-webkit-keyframes shadow {
+  0% {
+    text-shadow: none;
+  }
+  33% {
+    text-shadow: 4px 4px 16px yellow;
+  }
+  66% {
+    text-shadow: none;
+  }
+  75% {
+    color: yellow;
+  }
+  100% {
+    color: yellow;
+    text-shadow: 8px 8px 24px black;
+  }
+}
+
+@keyframes shadow {
+  0% {
+    text-shadow: none;
+  }
+  33% {
+    text-shadow: 4px 4px 16px yellow;
+  }
+  66% {
+    text-shadow: none;
+  }
+  75% {
+    color: yellow;
+  }
+  100% {
+    color: yellow;
+    text-shadow: 8px 8px 24px black;
+  }
 }
 
 footer {
@@ -222,6 +256,36 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 8px;
+  -webkit-animation: icons 1.5s ease-in forwards;
+          animation: icons 1.5s ease-in forwards;
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+}
+
+@-webkit-keyframes icons {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes icons {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
 }
 
 .icon {

@@ -28,25 +28,28 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0px 8px 16px  darkgreen;
-    & h1 {
-        color: #ffff00;
+}
+    
+#h1-h2 {
+    color: #2b2a2a44;
+    text-align: left;
+    animation: shadow 1.5s ease-in forwards;
+    text-shadow: none;
+    & h1{
         margin: 40px 60px;
-        text-shadow: 8px 8px 24px black;
-        text-shadow: 8px 8px 48px black;  
-        text-shadow: 8px 8px 24px black;
-        text-shadow: 0px 0px 16px black;
-        text-align: left;
         font-size: 3.2rem;
     }
     & h2 {
-        color: #ffff00;
         margin: 20px 0px 40px 60px;
-        text-shadow: 8px 8px 24px black;
-        text-shadow: 8px 8px 48px black;  
-        text-shadow: 8px 8px 24px black;
-        text-shadow: 0px 0px 16px black;
-        text-align: left;
-    }
+    }      
+}
+
+@keyframes shadow {
+    0%{text-shadow: none;}
+    33%{text-shadow: 4px 4px 16px yellow;}
+    66%{text-shadow: none;}
+    75%{color: yellow;}
+    100%{color:yellow; text-shadow: 8px 8px 24px black;}
 }
 
 footer {
@@ -152,6 +155,14 @@ main {
     display: flex;
     flex-direction: column;
     margin: 8px;
+    animation: icons 1.5s ease-in forwards;
+    transform: translateX(100px);
+}
+
+@keyframes icons{
+    0%{transform: translateX(100px); opacity: 0;}
+    100%{transform: translateX(0px); opacity: 1;}
+
 }
 
 .icon{
