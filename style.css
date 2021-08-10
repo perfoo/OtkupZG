@@ -243,8 +243,11 @@ main {
     margin-left: 8px;
     margin-right: 8px;
   }
+  span {
+    display: none;
+  }
   .icon img {
-    width: 32px;
+    width: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
