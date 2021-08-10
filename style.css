@@ -119,6 +119,32 @@ nav {
   text-shadow: 2px 2px 2px whitesmoke;
   text-shadow: 0px 0px 2px whitesmoke;
   position: relative;
+  -webkit-animation: nav 1.5s ease-in forwards;
+          animation: nav 1.5s ease-in forwards;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+}
+
+@-webkit-keyframes nav {
+  0% {
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes nav {
+  0% {
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 
 ul {
