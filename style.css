@@ -223,7 +223,7 @@ main {
 }
 
 .icon {
-  margin: 32px 8px;
+  margin: 32px 0px;
   width: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -242,6 +242,9 @@ main {
   header h1, header h2 {
     margin-left: 8px;
     margin-right: 8px;
+  }
+  .icon img {
+    width: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
