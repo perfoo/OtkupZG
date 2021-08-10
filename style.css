@@ -42,8 +42,8 @@ header {
           flex-direction: column;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-box-shadow: 4px 8px 16px  darkgreen;
-          box-shadow: 4px 8px 16px  darkgreen;
+  -webkit-box-shadow: 0px 8px 16px  darkgreen;
+          box-shadow: 0px 8px 16px  darkgreen;
 }
 
 header h1 {
