@@ -184,10 +184,28 @@ main {
 }
 
 @media screen and (max-width: 780px) {
-    header h1, header h2 {
-        margin-left: 8px;
-        margin-right: 8px;
+    #h1-h2 {
+        color: #2b2a2a44;
+        text-align: left;
+        animation: shadow 1.5s ease-in forwards;
+        text-shadow: none;
+        & h1{
+            margin: 40px;
+            font-size: 2.8rem;
+        }
+        & h2 {
+            margin: 20px 0px 40px 40px;
+        }      
     }
+    
+    @keyframes shadow {
+        0%{text-shadow: none;}
+        33%{text-shadow: 4px 4px 16px yellow;}
+        66%{text-shadow: none;}
+        75%{color: yellow;}
+        100%{color:yellow; text-shadow: 8px 8px 24px black;}
+    }
+    
     span {
         display: none;
     }
