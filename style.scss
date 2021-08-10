@@ -90,6 +90,7 @@ nav li {
 }
 
 nav li a {
+    color:#2b2a2a;
     text-decoration: none;
     &::after {
         text-decoration: none;
@@ -97,6 +98,7 @@ nav li a {
     }
     &:active {
         color: lightgray;
+        text-shadow: 1px 1px 8px black;
     }
 }
 
@@ -174,5 +176,8 @@ main {
     }
     .icon img {
         width: 50px;
+    }
+    main {
+        max-width: 100%;
     }
 }
