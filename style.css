@@ -32,7 +32,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   min-height: 50vh;
-  width: 100%;
+  width: 100vw;
   background-color: cadetblue;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#100a33), color-stop(rgba(135, 207, 235, 0.5)), to(transparent)), url("./phones.jpg");
   background-image: linear-gradient(to top, #100a33, rgba(135, 207, 235, 0.5), transparent), url("./phones.jpg");
@@ -240,7 +240,8 @@ main {
 
 @media screen and (max-width: 780px) {
   header h1, header h2 {
-    margin-left: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
   }
 }
 /*# sourceMappingURL=style.css.map */
