@@ -21,7 +21,7 @@ body {
 header {
     display: flex;
     min-height: 50vh;
-    min-width: 100%;
+    width: 100%;
     background-color: cadetblue;
     background-image: linear-gradient(to top, rgb(16, 10, 51), rgba(135, 207, 235, 0.5) ,transparent), url("./phones.jpg");
     flex-direction: column;
@@ -166,3 +166,8 @@ main {
     
 }
 
+@media screen and (max-width: 780px) {
+    header h1, header h2 {
+        margin-left: 10px;
+    }
+}
