@@ -391,5 +391,8 @@ main {
   main {
     max-width: 100%;
   }
+  .icon {
+    margin: 32px 0px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
