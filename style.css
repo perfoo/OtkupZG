@@ -228,20 +228,21 @@ main {
           align-items: center;
   background-color: lightgreen;
   width: 310px;
-  min-height: 200px;
+  height: 420px;
   margin: 32px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding: 8px;
+  padding: 0px;
   -webkit-box-shadow: 4px 8px 16px  darkgreen;
           box-shadow: 4px 8px 16px  darkgreen;
 }
 
 .card h3, .card h4 {
   text-align: center;
+  margin: 4px;
 }
 
 .card:hover {
@@ -256,6 +257,15 @@ main {
           transform: translate(-4px, -4px);
   -webkit-box-shadow: 2px 2px 8px  darkgreen;
           box-shadow: 2px 2px 8px  darkgreen;
+}
+
+.card img {
+  width: 100%;
+  margin: 8px 0px;
+}
+
+.h3-h4 {
+  height: 12%;
 }
 
 #h1-h2-icons {
