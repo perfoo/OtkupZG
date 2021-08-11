@@ -12,7 +12,7 @@ body {
     background-color: aquamarine;
     flex-wrap: nowrap;
     overflow-x: hidden;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Geneva, Verdana, Tahoma, sans-serif;
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -27,6 +27,7 @@ header {
     flex-direction: column;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 16px;
     box-shadow: 0px 8px 16px  darkgreen;
 }
     
@@ -130,9 +131,9 @@ main {
     justify-content: flex-start;
     align-items: center;
     background-color: lightgreen;
-    width: 300px;
+    width: 310px;
     min-height: 200px;
-    margin: 32px 32px ;
+    margin: 32px;
     flex-shrink: 0;
     flex-grow: 1;
     padding: 8px;
@@ -215,7 +216,10 @@ main {
     main {
         max-width: 100%;
     }
-    .icon{
+    .icon {
         margin: 32px 0px;
+    }
+    .card {
+        margin: 16px;
     }
 }

@@ -16,7 +16,7 @@ body {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   overflow-x: hidden;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Geneva, Verdana, Tahoma, sans-serif;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -42,6 +42,7 @@ header {
           flex-direction: column;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 16px;
   -webkit-box-shadow: 0px 8px 16px  darkgreen;
           box-shadow: 0px 8px 16px  darkgreen;
 }
@@ -226,9 +227,9 @@ main {
       -ms-flex-align: center;
           align-items: center;
   background-color: lightgreen;
-  width: 300px;
+  width: 310px;
   min-height: 200px;
-  margin: 32px 32px;
+  margin: 32px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -webkit-box-flex: 1;
@@ -393,6 +394,9 @@ main {
   }
   .icon {
     margin: 32px 0px;
+  }
+  .card {
+    margin: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
