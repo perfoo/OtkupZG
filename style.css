@@ -1,3 +1,6 @@
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in HSLA */
 *, *::before, *::after {
   margin: 0px;
   -webkit-box-sizing: border-box;
@@ -12,7 +15,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: aquamarine;
+  background-color: #F2AC29;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   overflow-x: hidden;
@@ -33,9 +36,9 @@ header {
   display: flex;
   min-height: 50vh;
   width: 100vw;
-  background-color: cadetblue;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#100a33), color-stop(rgba(135, 207, 235, 0.5)), to(transparent)), url("./phones.jpg");
-  background-image: linear-gradient(to top, #100a33, rgba(135, 207, 235, 0.5), transparent), url("./phones.jpg");
+  background-color: #D97904;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#D97904), color-stop(transparent), to(transparent)), -webkit-gradient(linear, left top, left bottom, from(#D97904), color-stop(transparent), color-stop(transparent), to(transparent)), url("./phones.jpg");
+  background-image: linear-gradient(to top, #D97904, transparent, transparent), linear-gradient(to bottom, #D97904, transparent, transparent, transparent), url("./phones.jpg");
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -43,8 +46,8 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 16px;
-  -webkit-box-shadow: 0px 8px 16px  darkgreen;
-          box-shadow: 0px 8px 16px  darkgreen;
+  -webkit-box-shadow: 0px 8px 16px #03A6A6;
+          box-shadow: 0px 8px 16px #03A6A6;
 }
 
 #h1-h2 {
@@ -69,16 +72,16 @@ header {
     text-shadow: none;
   }
   33% {
-    text-shadow: 4px 4px 16px yellow;
+    text-shadow: 4px 4px 16px #03A6A6;
   }
   66% {
     text-shadow: none;
   }
   75% {
-    color: yellow;
+    color: #03A6A6;
   }
   100% {
-    color: yellow;
+    color: #03A6A6;
     text-shadow: 8px 8px 24px black;
   }
 }
@@ -88,16 +91,16 @@ header {
     text-shadow: none;
   }
   33% {
-    text-shadow: 4px 4px 16px yellow;
+    text-shadow: 4px 4px 16px #03A6A6;
   }
   66% {
     text-shadow: none;
   }
   75% {
-    color: yellow;
+    color: #03A6A6;
   }
   100% {
-    color: yellow;
+    color: #03A6A6;
     text-shadow: 8px 8px 24px black;
   }
 }
@@ -108,7 +111,7 @@ footer {
   display: flex;
   min-height: 100px;
   min-width: 100%;
-  background-color: greenyellow;
+  background-color: #D97904;
   margin-top: auto;
 }
 
@@ -161,7 +164,7 @@ ul {
 
 nav li {
   display: inline-block;
-  border-left: whitesmoke 1px solid;
+  border-left: #D94AA7 1px solid;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -173,8 +176,8 @@ nav li {
 
 nav li:hover {
   background: rgba(92, 57, 69, 0.715);
-  -webkit-box-shadow: 1px 2px 16px violet;
-          box-shadow: 1px 2px 16px violet;
+  -webkit-box-shadow: 1px 2px 16px #D94AA7;
+          box-shadow: 1px 2px 16px #D94AA7;
 }
 
 nav li a {
@@ -226,7 +229,9 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: lightgreen;
+  background-color: #F2AC29;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#BF0426), color-stop(transparent), color-stop(transparent), to(transparent));
+  background-image: linear-gradient(to top, #BF0426, transparent, transparent, transparent);
   width: 310px;
   height: 420px;
   margin: 32px;
@@ -236,8 +241,9 @@ main {
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding: 0px;
-  -webkit-box-shadow: 4px 8px 16px  darkgreen;
-          box-shadow: 4px 8px 16px  darkgreen;
+  -webkit-box-shadow: 4px 8px 16px #03A6A6;
+          box-shadow: 4px 8px 16px #03A6A6;
+  color: #BF0426;
 }
 
 .card h3, .card h4 {
@@ -248,19 +254,21 @@ main {
 .card:hover {
   -webkit-transform: translate(4px, 4px);
           transform: translate(4px, 4px);
-  -webkit-box-shadow: 16px 16px 40px  darkgreen;
-          box-shadow: 16px 16px 40px  darkgreen;
+  -webkit-box-shadow: 16px 16px 40px #03A6A6;
+          box-shadow: 16px 16px 40px #03A6A6;
+  cursor: pointer;
 }
 
 .card:active {
   -webkit-transform: translate(-4px, -4px);
           transform: translate(-4px, -4px);
-  -webkit-box-shadow: 2px 2px 8px  darkgreen;
-          box-shadow: 2px 2px 8px  darkgreen;
+  -webkit-box-shadow: 2px 2px 8px #03A6A6;
+          box-shadow: 2px 2px 8px #03A6A6;
 }
 
 .card img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
   margin: 8px 0px;
 }
 
@@ -362,17 +370,17 @@ main {
       text-shadow: none;
     }
     33% {
-      text-shadow: 4px 4px 16px yellow;
+      text-shadow: 4px 4px 16px #BF0426;
     }
     66% {
       text-shadow: none;
     }
     75% {
-      color: yellow;
+      color: #BF0426;
     }
     100% {
-      color: yellow;
-      text-shadow: 8px 8px 24px black;
+      color: #BF0426;
+      text-shadow: 8px 8px 24px #D97904;
     }
   }
   @keyframes shadow {
@@ -380,17 +388,17 @@ main {
       text-shadow: none;
     }
     33% {
-      text-shadow: 4px 4px 16px yellow;
+      text-shadow: 4px 4px 16px #BF0426;
     }
     66% {
       text-shadow: none;
     }
     75% {
-      color: yellow;
+      color: #BF0426;
     }
     100% {
-      color: yellow;
-      text-shadow: 8px 8px 24px black;
+      color: #BF0426;
+      text-shadow: 8px 8px 24px #D97904;
     }
   }
   span {

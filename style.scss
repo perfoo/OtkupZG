@@ -9,7 +9,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: aquamarine;
+    background-color: $color-4-hex;
     flex-wrap: nowrap;
     overflow-x: hidden;
     font-family: Geneva, Verdana, Tahoma, sans-serif;
@@ -22,13 +22,13 @@ header {
     display: flex;
     min-height: 50vh;
     width: 100vw;
-    background-color: cadetblue;
-    background-image: linear-gradient(to top, rgb(16, 10, 51), rgba(135, 207, 235, 0.5) ,transparent), url("./phones.jpg");
+    background-color: $color-5-hex;
+    background-image: linear-gradient(to top, $color-5-hex, transparent, transparent), linear-gradient(to bottom, $color-5-hex, transparent, transparent, transparent), url("./phones.jpg");
     flex-direction: column;
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 16px;
-    box-shadow: 0px 8px 16px  darkgreen;
+    box-shadow: 0px 8px 16px  $color-3-hex;
 }
     
 #h1-h2 {
@@ -47,17 +47,17 @@ header {
 
 @keyframes shadow {
     0%{text-shadow: none;}
-    33%{text-shadow: 4px 4px 16px yellow;}
+    33%{text-shadow: 4px 4px 16px $color-3-hex;}
     66%{text-shadow: none;}
-    75%{color: yellow;}
-    100%{color:yellow; text-shadow: 8px 8px 24px black;}
+    75%{color: $color-3-hex;}
+    100%{color: $color-3-hex; text-shadow: 8px 8px 24px black;}
 }
 
 footer {
     display: flex;
     min-height: 100px;
     min-width: 100%;
-    background-color: greenyellow;
+    background-color: $color-5-hex;
     margin-top: auto;
     
 }
@@ -87,7 +87,7 @@ ul {
 
 nav li {
     display: inline-block;
-    border-left: whitesmoke 1px solid;
+    border-left: $color-2-hex 1px solid;
     flex: 1;
     text-align: center;
     padding: 8px;
@@ -95,7 +95,7 @@ nav li {
     font-weight: bold;
     &:hover {
         background:rgba(92, 57, 69, 0.715);
-        box-shadow: 1px 2px 16px violet;
+        box-shadow: 1px 2px 16px $color-2-hex;
     }
 }
 
@@ -130,28 +130,32 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: lightgreen;
+    background-color: $color-4-hex;
+    background-image: linear-gradient(to top, $color-1-hex, transparent, transparent, transparent);
     width: 310px;
     height: 420px;
     margin: 32px;
     flex-shrink: 0;
     flex-grow: 1;
     padding: 0px;
-    box-shadow: 4px 8px 16px  darkgreen;
+    box-shadow: 4px 8px 16px  $color-3-hex;
+    color: $color-1-hex;
     & h3, h4 {
         text-align: center;
         margin: 4px;
     }
     &:hover {
         transform: translate(4px, 4px);
-        box-shadow: 16px 16px 40px  darkgreen;
+        box-shadow: 16px 16px 40px  $color-3-hex;
+        cursor: pointer;
     }
     &:active {
         transform: translate(-4px, -4px);
-        box-shadow: 2px 2px 8px  darkgreen;
+        box-shadow: 2px 2px 8px  $color-3-hex;
     }
     & img {
-        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
         margin: 8px 0px;
     }
 }
@@ -210,10 +214,10 @@ main {
     
     @keyframes shadow {
         0%{text-shadow: none;}
-        33%{text-shadow: 4px 4px 16px yellow;}
+        33%{text-shadow: 4px 4px 16px $color-1-hex;}
         66%{text-shadow: none;}
-        75%{color: yellow;}
-        100%{color:yellow; text-shadow: 8px 8px 24px black;}
+        75%{color: $color-1-hex;}
+        100%{color: $color-1-hex; text-shadow: 8px 8px 24px $color-5-hex;}
     }
     
     span {
