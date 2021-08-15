@@ -5,6 +5,8 @@ $color-3-hex: #03A6A6;
 $color-4-hex: #F2AC29;
 $color-5-hex: #D97904;
 
+$color-1-transp: transparentize($color-1-hex, 0.5);
+
 /* Color Theme Swatches in RGBA */
 $color-1-rgba: rgba(191,3,38, 1);
 $color-2-rgba: rgba(216,73,166, 1);

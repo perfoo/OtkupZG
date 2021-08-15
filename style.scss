@@ -131,7 +131,7 @@ main {
     justify-content: flex-start;
     align-items: center;
     background-color: $color-4-hex;
-    background-image: linear-gradient(to top, $color-1-hex, transparent, transparent, transparent);
+    background-image: linear-gradient(to top, $color-1-transp, transparent, transparent,);
     width: 310px;
     height: 420px;
     margin: 32px;
