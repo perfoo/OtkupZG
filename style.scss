@@ -50,7 +50,7 @@ header {
     33%{text-shadow: 4px 4px 16px $color-3-hex;}
     66%{text-shadow: none;}
     75%{color: $color-3-hex;}
-    100%{color: $color-3-hex; text-shadow: 8px 8px 24px black;}
+    100%{color: $color-3-hex; text-shadow: 8px 8px 24px black, 4px 4px 16px black;}
 }
 
 footer {
@@ -100,14 +100,14 @@ nav li {
 }
 
 nav li a {
-    color:#2b2a2a;
+    color: $color-3-dark;
     text-decoration: none;
     &::after {
         text-decoration: none;
-        color: #2b2a2a;
+        color: $color-3-dark;
     }
     &:active {
-        color: lightgray;
+        color: $color-4-hex;
         text-shadow: 1px 1px 8px black;
     }
 }
@@ -151,7 +151,7 @@ main {
     }
     &:active {
         transform: translate(-4px, -4px);
-        box-shadow: 2px 2px 8px  $color-3-hex;
+        box-shadow: 1px 1px 8px  $color-3-hex;
     }
     & img {
         max-width: 100%;
@@ -191,9 +191,8 @@ main {
     display: flex;
     flex-direction: column;
     text-align: center;
-    color: rgb(0, 0, 0);
-    text-shadow: 1px 2px 8px whitesmoke;
-    text-shadow: 1px 1px 8px whitesmoke;
+    color: $color-4-hex;
+    text-shadow: 1px 1px 4px black, 4px 4px 16px black;
     font-size: 100%;
 }
 
@@ -214,10 +213,10 @@ main {
     
     @keyframes shadow {
         0%{text-shadow: none;}
-        33%{text-shadow: 4px 4px 16px $color-1-hex;}
+        33%{text-shadow: 4px 4px 16px $color-3-hex;}
         66%{text-shadow: none;}
-        75%{color: $color-1-hex;}
-        100%{color: $color-1-hex; text-shadow: 8px 8px 24px $color-5-hex;}
+        75%{color: $color-3-hex;}
+        100%{color: $color-3-hex; text-shadow: 8px 8px 24px black, 4px 4px 16px black;}
     }
     
     span {

@@ -82,7 +82,7 @@ header {
   }
   100% {
     color: #03A6A6;
-    text-shadow: 8px 8px 24px black;
+    text-shadow: 8px 8px 24px black, 4px 4px 16px black;
   }
 }
 
@@ -101,7 +101,7 @@ header {
   }
   100% {
     color: #03A6A6;
-    text-shadow: 8px 8px 24px black;
+    text-shadow: 8px 8px 24px black, 4px 4px 16px black;
   }
 }
 
@@ -181,17 +181,17 @@ nav li:hover {
 }
 
 nav li a {
-  color: #2b2a2a;
+  color: black;
   text-decoration: none;
 }
 
 nav li a::after {
   text-decoration: none;
-  color: #2b2a2a;
+  color: black;
 }
 
 nav li a:active {
-  color: lightgray;
+  color: #F2AC29;
   text-shadow: 1px 1px 8px black;
 }
 
@@ -262,8 +262,8 @@ main {
 .card:active {
   -webkit-transform: translate(-4px, -4px);
           transform: translate(-4px, -4px);
-  -webkit-box-shadow: 2px 2px 8px #03A6A6;
-          box-shadow: 2px 2px 8px #03A6A6;
+  -webkit-box-shadow: 1px 1px 8px #03A6A6;
+          box-shadow: 1px 1px 8px #03A6A6;
 }
 
 .card img {
@@ -344,9 +344,8 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  color: black;
-  text-shadow: 1px 2px 8px whitesmoke;
-  text-shadow: 1px 1px 8px whitesmoke;
+  color: #F2AC29;
+  text-shadow: 1px 1px 4px black, 4px 4px 16px black;
   font-size: 100%;
 }
 
@@ -370,17 +369,17 @@ main {
       text-shadow: none;
     }
     33% {
-      text-shadow: 4px 4px 16px #BF0426;
+      text-shadow: 4px 4px 16px #03A6A6;
     }
     66% {
       text-shadow: none;
     }
     75% {
-      color: #BF0426;
+      color: #03A6A6;
     }
     100% {
-      color: #BF0426;
-      text-shadow: 8px 8px 24px #D97904;
+      color: #03A6A6;
+      text-shadow: 8px 8px 24px black, 4px 4px 16px black;
     }
   }
   @keyframes shadow {
@@ -388,17 +387,17 @@ main {
       text-shadow: none;
     }
     33% {
-      text-shadow: 4px 4px 16px #BF0426;
+      text-shadow: 4px 4px 16px #03A6A6;
     }
     66% {
       text-shadow: none;
     }
     75% {
-      color: #BF0426;
+      color: #03A6A6;
     }
     100% {
-      color: #BF0426;
-      text-shadow: 8px 8px 24px #D97904;
+      color: #03A6A6;
+      text-shadow: 8px 8px 24px black, 4px 4px 16px black;
     }
   }
   span {
