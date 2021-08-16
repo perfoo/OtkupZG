@@ -12,7 +12,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: aquamarine;
+  background-color: white;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   overflow-x: hidden;
@@ -33,9 +33,9 @@ header {
   display: flex;
   min-height: 50vh;
   width: 100vw;
-  background-color: cadetblue;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#100a33), color-stop(rgba(135, 207, 235, 0.5)), to(transparent)), url("./img/phones.jpg");
-  background-image: linear-gradient(to top, #100a33, rgba(135, 207, 235, 0.5), transparent), url("./img/phones.jpg");
+  background-color: black;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#100a33), to(transparent)), url("./img/phones.jpg");
+  background-image: linear-gradient(to top, #100a33, transparent), url("./img/phones.jpg");
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -43,8 +43,8 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 16px;
-  -webkit-box-shadow: 0px 8px 16px  darkgreen;
-          box-shadow: 0px 8px 16px  darkgreen;
+  -webkit-box-shadow: 0px 8px 16px violet;
+          box-shadow: 0px 8px 16px violet;
 }
 
 #h1-h2 {
@@ -69,17 +69,17 @@ header {
     text-shadow: none;
   }
   33% {
-    text-shadow: 4px 4px 16px yellow;
+    text-shadow: 4px 4px 16px cyan;
   }
   66% {
     text-shadow: none;
   }
   75% {
-    color: yellow;
+    color: cyan;
   }
   100% {
-    color: yellow;
-    text-shadow: 8px 8px 24px black;
+    color: cyan;
+    text-shadow: 8px 8px 24px black, 8px 8px 32px violet;
   }
 }
 
@@ -88,17 +88,17 @@ header {
     text-shadow: none;
   }
   33% {
-    text-shadow: 4px 4px 16px yellow;
+    text-shadow: 4px 4px 16px cyan;
   }
   66% {
     text-shadow: none;
   }
   75% {
-    color: yellow;
+    color: cyan;
   }
   100% {
-    color: yellow;
-    text-shadow: 8px 8px 24px black;
+    color: cyan;
+    text-shadow: 8px 8px 24px black, 8px 8px 32px violet;
   }
 }
 
@@ -108,7 +108,8 @@ footer {
   display: flex;
   min-height: 100px;
   min-width: 100%;
-  background-color: greenyellow;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#100a33), to(transparent));
+  background-image: linear-gradient(to bottom, #100a33, transparent);
   margin-top: auto;
 }
 
@@ -226,9 +227,11 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: lightgreen;
-  width: 310px;
-  height: 420px;
+  background-color: white;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(16, 10, 51, 0.795)), color-stop(transparent), color-stop(transparent), color-stop(transparent), to(transparent));
+  background-image: linear-gradient(to top, rgba(16, 10, 51, 0.795), transparent, transparent, transparent, transparent);
+  max-width: 380px;
+  min-height: 320px;
   margin: 32px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -236,8 +239,8 @@ main {
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding: 0px;
-  -webkit-box-shadow: 4px 8px 16px  darkgreen;
-          box-shadow: 4px 8px 16px  darkgreen;
+  -webkit-box-shadow: 4px 8px 16px violet;
+          box-shadow: 4px 8px 16px violet;
 }
 
 .card h3, .card h4 {
@@ -248,24 +251,25 @@ main {
 .card:hover {
   -webkit-transform: translate(4px, 4px);
           transform: translate(4px, 4px);
-  -webkit-box-shadow: 16px 16px 40px  darkgreen;
-          box-shadow: 16px 16px 40px  darkgreen;
+  -webkit-box-shadow: 16px 16px 40px violet;
+          box-shadow: 16px 16px 40px violet;
 }
 
 .card:active {
   -webkit-transform: translate(-4px, -4px);
           transform: translate(-4px, -4px);
-  -webkit-box-shadow: 2px 2px 8px  darkgreen;
-          box-shadow: 2px 2px 8px  darkgreen;
+  -webkit-box-shadow: 2px 2px 8px violet;
+          box-shadow: 2px 2px 8px violet;
 }
 
 .card img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
   margin: 8px 0px;
 }
 
 .h3-h4 {
-  height: 12%;
+  min-height: 14%;
 }
 
 #h1-h2-icons {
@@ -336,9 +340,8 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  color: black;
-  text-shadow: 1px 2px 8px whitesmoke;
-  text-shadow: 1px 1px 8px whitesmoke;
+  color: white;
+  text-shadow: 1px 2px 8px black, 2px 4px 16px violet;
   font-size: 100%;
 }
 
@@ -362,17 +365,17 @@ main {
       text-shadow: none;
     }
     33% {
-      text-shadow: 4px 4px 16px yellow;
+      text-shadow: 4px 4px 16px cyan;
     }
     66% {
       text-shadow: none;
     }
     75% {
-      color: yellow;
+      color: cyan;
     }
     100% {
-      color: yellow;
-      text-shadow: 8px 8px 24px black;
+      color: cyan;
+      text-shadow: 8px 8px 24px black, 8px 8px 32px violet;
     }
   }
   @keyframes shadow {
@@ -380,17 +383,17 @@ main {
       text-shadow: none;
     }
     33% {
-      text-shadow: 4px 4px 16px yellow;
+      text-shadow: 4px 4px 16px cyan;
     }
     66% {
       text-shadow: none;
     }
     75% {
-      color: yellow;
+      color: cyan;
     }
     100% {
-      color: yellow;
-      text-shadow: 8px 8px 24px black;
+      color: cyan;
+      text-shadow: 8px 8px 24px black, 8px 8px 32px violet;
     }
   }
   span {
