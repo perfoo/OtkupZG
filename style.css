@@ -348,6 +348,21 @@ main {
 
 .text {
   background-color: teal;
+  text-shadow: 1px 1px 4px white;
+}
+
+.text div {
+  margin: 10px 60px 10px 60px;
+}
+
+#lokacija {
+  background-color: white;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+#lokacija h2, #lokacija p {
+  margin: 10px 60px 10px 60px;
 }
 
 @media screen and (max-width: 780px) {

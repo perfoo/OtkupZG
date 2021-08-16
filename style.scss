@@ -200,6 +200,19 @@ main {
 
 .text {
     background-color: $color-h1-dark;
+    text-shadow: 1px 1px 4px white;
+    & div {
+        margin: 10px 60px 10px 60px;
+    }
+}
+
+#lokacija {
+    background-color: white;
+    width: 100%;
+    margin: 10px 0px;
+    & h2, p {
+        margin: 10px 60px 10px 60px;
+    }
 }
 
 @media screen and (max-width: 780px) {
