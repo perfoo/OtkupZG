@@ -131,7 +131,7 @@ main {
     justify-content: flex-start;
     align-items: center;
     background-color: white;
-    background-image: linear-gradient(to top, rgba(16, 10, 51, 0.795), transparent ,transparent, transparent, transparent);
+    background-image: linear-gradient(to top, $color-h1-dark, transparent ,transparent, transparent, transparent);
     max-width: 380px;
     min-height: 320px;
     margin: 32px;
@@ -161,6 +161,7 @@ main {
 
 .h3-h4 {
     min-height: 14%;
+    text-shadow: 1px 1px $color-h1;
 }
 
 #h1-h2-icons {
@@ -197,6 +198,10 @@ main {
     font-size: 100%;
 }
 
+.text {
+    background-color: $color-h1-dark;
+}
+
 @media screen and (max-width: 780px) {
     #h1-h2 {
         color: #2b2a2a44;
@@ -227,7 +232,7 @@ main {
         width: 50px;
     }
     main {
-        max-width: 100%;
+        max-width: 90%;
     }
     .icon {
         margin: 32px 0px;

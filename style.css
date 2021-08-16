@@ -33,7 +33,7 @@ header {
   display: flex;
   min-height: 50vh;
   width: 100vw;
-  background-color: black;
+  background-color: teal;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#100a33), to(transparent)), url("./img/phones.jpg");
   background-image: linear-gradient(to top, #100a33, transparent), url("./img/phones.jpg");
   -webkit-box-orient: vertical;
@@ -228,8 +228,8 @@ main {
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(16, 10, 51, 0.795)), color-stop(transparent), color-stop(transparent), color-stop(transparent), to(transparent));
-  background-image: linear-gradient(to top, rgba(16, 10, 51, 0.795), transparent, transparent, transparent, transparent);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(teal), color-stop(transparent), color-stop(transparent), color-stop(transparent), to(transparent));
+  background-image: linear-gradient(to top, teal, transparent, transparent, transparent, transparent);
   max-width: 380px;
   min-height: 320px;
   margin: 32px;
@@ -270,6 +270,7 @@ main {
 
 .h3-h4 {
   min-height: 14%;
+  text-shadow: 1px 1px cyan;
 }
 
 #h1-h2-icons {
@@ -345,6 +346,10 @@ main {
   font-size: 100%;
 }
 
+.text {
+  background-color: teal;
+}
+
 @media screen and (max-width: 780px) {
   #h1-h2 {
     color: #2b2a2a44;
@@ -403,7 +408,7 @@ main {
     width: 50px;
   }
   main {
-    max-width: 100%;
+    max-width: 90%;
   }
   .icon {
     margin: 32px 0px;
