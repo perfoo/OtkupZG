@@ -33,7 +33,7 @@ header {
   display: flex;
   min-height: 50vh;
   width: 100vw;
-  background-color: teal;
+  background-color: #009999;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#100a33), to(transparent)), url("./img/phones.jpg");
   background-image: linear-gradient(to top, #100a33, transparent), url("./img/phones.jpg");
   -webkit-box-orient: vertical;
@@ -43,8 +43,8 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 16px;
-  -webkit-box-shadow: 0px 8px 16px violet;
-          box-shadow: 0px 8px 16px violet;
+  -webkit-box-shadow: 0px 8px 8px violet;
+          box-shadow: 0px 8px 8px violet;
 }
 
 #h1-h2 {
@@ -194,7 +194,7 @@ nav li a:active {
 }
 
 main {
-  max-width: 80%;
+  max-width: 90%;
 }
 
 #zalagaonica {
@@ -228,8 +228,8 @@ main {
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(teal), color-stop(transparent), color-stop(transparent), color-stop(transparent), to(transparent));
-  background-image: linear-gradient(to top, teal, transparent, transparent, transparent, transparent);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#009999), color-stop(transparent), color-stop(transparent), color-stop(transparent), to(transparent));
+  background-image: linear-gradient(to top, #009999, transparent, transparent, transparent, transparent);
   max-width: 380px;
   min-height: 320px;
   margin: 32px;
@@ -347,7 +347,7 @@ main {
 }
 
 .text {
-  background-color: teal;
+  background-color: #009999;
   text-shadow: 1px 1px 4px white;
 }
 
@@ -421,9 +421,6 @@ main {
   }
   .icon img {
     width: 50px;
-  }
-  main {
-    max-width: 90%;
   }
   .icon {
     margin: 32px 0px;

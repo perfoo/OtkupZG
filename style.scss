@@ -28,7 +28,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 16px;
-    box-shadow: 0px 8px 16px $color-box-shadow;
+    box-shadow: 0px 8px 8px $color-box-shadow;
 }
     
 #h1-h2 {
@@ -113,7 +113,7 @@ nav li a {
 }
 
 main {
-    max-width: 80%;
+    max-width: 90%;
 
 }
 
@@ -243,9 +243,6 @@ main {
     }
     .icon img {
         width: 50px;
-    }
-    main {
-        max-width: 90%;
     }
     .icon {
         margin: 32px 0px;
