@@ -426,12 +426,10 @@ main {
     margin: 32px 0px;
   }
   .card {
+    max-width: 320px;
+    max-height: 320px;
+    min-height: 240px;
     margin: 16px;
-  }
-  .card {
-    /*max-width: 380px;
-        min-height: 320px; */
-    margin: 24px;
     -ms-flex-negative: 1;
         flex-shrink: 1;
   }
