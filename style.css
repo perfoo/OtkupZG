@@ -428,5 +428,12 @@ main {
   .card {
     margin: 16px;
   }
+  .card {
+    /*max-width: 380px;
+        min-height: 320px; */
+    margin: 24px;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
