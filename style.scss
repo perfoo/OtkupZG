@@ -174,7 +174,7 @@ main {
 #icons {
     display: flex;
     flex-direction: column;
-    margin: 8px;
+    margin: 16px 8px;
     animation: icons 1.5s ease-in forwards;
     transform: translateX(100px);
 }
@@ -186,7 +186,7 @@ main {
 }
 
 .icon{
-    margin: 32px 8px;
+    margin: 8px;
     width: 70px;
     display: flex;
     flex-direction: column;
@@ -222,11 +222,11 @@ main {
         animation: shadow 1.5s ease-in forwards;
         text-shadow: none;
         & h1{
-            margin: 20px 0px 60px 40px;
+            margin: 20px 0px 60px 20px;
             font-size: 2.8rem;
         }
         & h2 {
-            margin: 20px 10px 40px 40px;
+            margin: 20px 10px 40px 20px;
         }      
     }
     
@@ -245,6 +245,9 @@ main {
         width: 50px;
     }
     .icon {
+        margin: 8px 0px;
+    }
+    #icons {
         margin: 8px 0px;
     }
     .card {
