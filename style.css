@@ -430,9 +430,8 @@ main {
     margin: 8px 0px 20px 0px;
   }
   .card {
-    max-width: 320px;
+    min-width: 320px;
     max-height: 320px;
-    min-height: 240px;
     margin: 16px;
     -ms-flex-negative: 1;
         flex-shrink: 1;
