@@ -16,7 +16,7 @@ body {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   overflow-x: hidden;
-  font-family: Geneva, Verdana, Tahoma, sans-serif;
+  font-family: Prompt, Geneva, Verdana, Tahoma, sans-serif;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -25,6 +25,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-weight: 300;
 }
 
 header {
@@ -363,11 +364,12 @@ main {
 
 .text p {
   margin: 8px 80px;
+  font-size: 105%;
+  line-height: 1.4em;
 }
 
 .text h2, .text h3 {
   margin: 24px 80px 8px 80px;
-  text-shadow: 2px 2px 4px #99ffff, 1px 1px 8px #006666;
 }
 
 .text div {

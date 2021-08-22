@@ -12,10 +12,11 @@ body {
     background-color: white;
     flex-wrap: nowrap;
     overflow-x: hidden;
-    font-family: Geneva, Verdana, Tahoma, sans-serif;
+    font-family: Prompt, Geneva, Verdana, Tahoma, sans-serif;
     align-items: center;
     align-content: center;
     justify-content: center;
+    font-weight: 300;
 }
 
 header {
@@ -206,13 +207,15 @@ main {
     background-color: $color-h1;
     margin: 16px;
     width: 100%;
+    
     & p {
         margin: 8px 80px;
+        font-size: 105%;
+        line-height: 1.4em;
     }
     & h2, h3{
         margin: 24px 80px 8px 80px;  
-        text-shadow: 2px 2px 4px $color-h1-light,
-                     1px 1px 8px $color-h1-dark;
+
     }
     & div {
         margin-bottom: 32px;
