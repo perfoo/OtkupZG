@@ -116,7 +116,6 @@ nav li a {
 
 main {
     max-width: 90%;
-
 }
 
 #zalagaonica {
@@ -169,6 +168,7 @@ main {
 #h1-h2-icons {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: flex-end;
 }
@@ -179,13 +179,11 @@ main {
     margin: 20px 8px 40px 8px;
     animation: icons 1.5s ease-in forwards;
     transform: translateX(100px);
-    
 }
 
 @keyframes icons{
     0%{transform: translateX(100px); opacity: 0;}
     100%{transform: translateX(0px); opacity: 1;}
-
 }
 
 .icon{
@@ -194,28 +192,41 @@ main {
     flex-direction: column;
     text-align: center;
     color: white;
-    position: sticky;
     text-shadow: 1px 2px 8px black,
                  2px 4px 16px $color-box-shadow;
-    
-    font-size: 100%;
+     &:hover {
+         transform: translate(1px, 1px);
+     }
+     &:active {
+         transform: translate(-1px, -1px);
+     }
 }
 
 .text {
     background-color: $color-h1;
-    text-shadow: 1px 1px 4px white;
+    margin: 16px;
+    width: 100%;
+    & p {
+        margin: 8px 80px;
+    }
+    & h2, h3{
+        margin: 24px 80px 8px 80px;  
+        text-shadow: 2px 2px 4px $color-h1-light,
+                     1px 1px 8px $color-h1-dark;
+    }
     & div {
-        margin: 10px 60px 10px 60px;
+        margin-bottom: 32px;
     }
 }
 
-#lokacija {
-    background-color: white;
-    width: 100%;
-    margin: 10px 0px;
-    & h2, p {
-        margin: 10px 60px 10px 60px;
+#ne {
+    & h2 {
+        text-decoration: 2px underline $color-box-shadow ;
     }
+}
+#location {
+    background-color: white;
+    width: 100%; 
 }
 
 @media screen and (max-width: 780px) {
@@ -252,7 +263,7 @@ main {
         font-size: 80%;
     }
     #icons {
-        margin: 8px 0px 60px 8px;
+        margin: 8px 0px 40px 8px;
     }
     .card {
         min-width: 320px;
@@ -260,5 +271,20 @@ main {
         //min-height: 260px;
         margin: 16px;
         flex-shrink: 1;
+    }
+
+    .text {
+        margin: 8px;
+        & p {
+            margin: 8px 24px;
+        }
+        & h2, h3{
+            margin: 24px 24px 8px 24px;  
+            text-shadow: 2px 2px 4px $color-h1-light,
+                         1px 1px 8px $color-h1-dark;
+        }
+        & div {
+            margin-bottom: 32px;
+        }
     }
 }

@@ -33,7 +33,7 @@ header {
   display: flex;
   min-height: 50vh;
   width: 100vw;
-  background-color: #009999;
+  background-color: #006666;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#100a33), to(transparent)), url("./img/phones.jpg");
   background-image: linear-gradient(to top, #100a33, transparent), url("./img/phones.jpg");
   -webkit-box-orient: vertical;
@@ -280,6 +280,8 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -340,29 +342,46 @@ main {
           flex-direction: column;
   text-align: center;
   color: white;
-  position: -webkit-sticky;
-  position: sticky;
   text-shadow: 1px 2px 8px black, 2px 4px 16px violet;
-  font-size: 100%;
+}
+
+.icon:hover {
+  -webkit-transform: translate(1px, 1px);
+          transform: translate(1px, 1px);
+}
+
+.icon:active {
+  -webkit-transform: translate(-1px, -1px);
+          transform: translate(-1px, -1px);
 }
 
 .text {
   background-color: cyan;
-  text-shadow: 1px 1px 4px white;
+  margin: 16px;
+  width: 100%;
+}
+
+.text p {
+  margin: 8px 80px;
+}
+
+.text h2, .text h3 {
+  margin: 24px 80px 8px 80px;
+  text-shadow: 2px 2px 4px #99ffff, 1px 1px 8px #006666;
 }
 
 .text div {
-  margin: 10px 60px 10px 60px;
+  margin-bottom: 32px;
 }
 
-#lokacija {
+#ne h2 {
+  -webkit-text-decoration: 2px underline violet;
+          text-decoration: 2px underline violet;
+}
+
+#location {
   background-color: white;
   width: 100%;
-  margin: 10px 0px;
-}
-
-#lokacija h2, #lokacija p {
-  margin: 10px 60px 10px 60px;
 }
 
 @media screen and (max-width: 780px) {
@@ -427,7 +446,7 @@ main {
     font-size: 80%;
   }
   #icons {
-    margin: 8px 0px 60px 8px;
+    margin: 8px 0px 40px 8px;
   }
   .card {
     min-width: 320px;
@@ -435,6 +454,19 @@ main {
     margin: 16px;
     -ms-flex-negative: 1;
         flex-shrink: 1;
+  }
+  .text {
+    margin: 8px;
+  }
+  .text p {
+    margin: 8px 24px;
+  }
+  .text h2, .text h3 {
+    margin: 24px 24px 8px 24px;
+    text-shadow: 2px 2px 4px #99ffff, 1px 1px 8px #006666;
+  }
+  .text div {
+    margin-bottom: 32px;
   }
 }
 /*# sourceMappingURL=style.css.map */
