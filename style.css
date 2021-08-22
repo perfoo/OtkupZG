@@ -43,8 +43,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 16px;
-  -webkit-box-shadow: 0px 8px 8px violet;
-          box-shadow: 0px 8px 8px violet;
 }
 
 #h1-h2 {
@@ -162,7 +160,7 @@ ul {
 
 nav li {
   display: inline-block;
-  border-left: whitesmoke 1px solid;
+  border-left: white 1px solid;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -176,6 +174,7 @@ nav li:hover {
   background: rgba(92, 57, 69, 0.715);
   -webkit-box-shadow: 1px 2px 16px violet;
           box-shadow: 1px 2px 16px violet;
+  text-shadow: 1px 1px 4px white, 2px 2px 8px violet;
 }
 
 nav li a {
@@ -228,8 +227,8 @@ main {
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#009999), color-stop(transparent), color-stop(transparent), color-stop(transparent), to(transparent));
-  background-image: linear-gradient(to top, #009999, transparent, transparent, transparent, transparent);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(cyan), color-stop(transparent), color-stop(transparent), color-stop(transparent), to(transparent));
+  background-image: linear-gradient(to top, cyan, transparent, transparent, transparent, transparent);
   max-width: 380px;
   min-height: 320px;
   margin: 32px;
@@ -331,8 +330,7 @@ main {
 }
 
 .icon {
-  margin: 8px;
-  width: 70px;
+  margin: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -342,12 +340,14 @@ main {
           flex-direction: column;
   text-align: center;
   color: white;
+  position: -webkit-sticky;
+  position: sticky;
   text-shadow: 1px 2px 8px black, 2px 4px 16px violet;
   font-size: 100%;
 }
 
 .text {
-  background-color: #009999;
+  background-color: cyan;
   text-shadow: 1px 1px 4px white;
 }
 
@@ -374,11 +374,11 @@ main {
     text-shadow: none;
   }
   #h1-h2 h1 {
-    margin: 20px 0px 60px 20px;
+    margin: 20px 20px 60px 20px;
     font-size: 2.8rem;
   }
   #h1-h2 h2 {
-    margin: 20px 10px 40px 20px;
+    margin: 20px 20px 40px 20px;
   }
   @-webkit-keyframes shadow {
     0% {
@@ -420,13 +420,14 @@ main {
     display: none;
   }
   .icon img {
-    width: 50px;
+    width: 40px;
   }
   .icon {
     margin: 8px 0px;
+    font-size: 80%;
   }
   #icons {
-    margin: 8px 0px;
+    margin: 8px 0px 20px 0px;
   }
   .card {
     max-width: 320px;

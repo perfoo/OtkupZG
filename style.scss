@@ -28,7 +28,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 16px;
-    box-shadow: 0px 8px 8px $color-box-shadow;
+    //box-shadow: 0px 8px 8px $color-box-shadow;
 }
     
 #h1-h2 {
@@ -87,7 +87,7 @@ ul {
 
 nav li {
     display: inline-block;
-    border-left: whitesmoke 1px solid;
+    border-left: white 1px solid;
     flex: 1;
     text-align: center;
     padding: 8px;
@@ -96,6 +96,8 @@ nav li {
     &:hover {
         background:rgba(92, 57, 69, 0.715);
         box-shadow: 1px 2px 16px $color-box-shadow;
+        text-shadow: 1px 1px 4px white,
+                     2px 2px 8px $color-box-shadow;
     }
 }
 
@@ -131,7 +133,7 @@ main {
     justify-content: flex-start;
     align-items: center;
     background-color: white;
-    background-image: linear-gradient(to top, $color-h1-dark, transparent ,transparent, transparent, transparent);
+    background-image: linear-gradient(to top, $color-h1, transparent ,transparent, transparent, transparent);
     max-width: 380px;
     min-height: 320px;
     margin: 32px;
@@ -177,6 +179,7 @@ main {
     margin: 16px 8px;
     animation: icons 1.5s ease-in forwards;
     transform: translateX(100px);
+    
 }
 
 @keyframes icons{
@@ -186,12 +189,12 @@ main {
 }
 
 .icon{
-    margin: 8px;
-    width: 70px;
+    margin: 16px;
     display: flex;
     flex-direction: column;
     text-align: center;
     color: white;
+    position: sticky;
     text-shadow: 1px 2px 8px black,
                  2px 4px 16px $color-box-shadow;
     
@@ -199,7 +202,7 @@ main {
 }
 
 .text {
-    background-color: $color-h1-dark;
+    background-color: $color-h1;
     text-shadow: 1px 1px 4px white;
     & div {
         margin: 10px 60px 10px 60px;
@@ -222,11 +225,11 @@ main {
         animation: shadow 1.5s ease-in forwards;
         text-shadow: none;
         & h1{
-            margin: 20px 0px 60px 20px;
+            margin: 20px 20px 60px 20px;
             font-size: 2.8rem;
         }
         & h2 {
-            margin: 20px 10px 40px 20px;
+            margin: 20px 20px 40px 20px;
         }      
     }
     
@@ -242,13 +245,14 @@ main {
         display: none;
     }
     .icon img {
-        width: 50px;
+        width: 40px;
     }
     .icon {
         margin: 8px 0px;
+        font-size: 80%;
     }
     #icons {
-        margin: 8px 0px;
+        margin: 8px 0px 20px 0px;
     }
     .card {
         max-width: 320px;
