@@ -140,18 +140,18 @@ main {
     flex-shrink: 0;
     flex-grow: 1;
     padding: 0px;
-    box-shadow: 4px 8px 16px  $color-box-shadow;
+    box-shadow: 2px 4px 8px  $color-box-shadow;
     & h3, h4 {
         text-align: center;
         margin: 4px;
     }
     &:hover {
         transform: translate(4px, 4px);
-        box-shadow: 16px 16px 40px  $color-box-shadow;
+        box-shadow: 4px 8px 16px  $color-box-shadow;
     }
     &:active {
         transform: translate(-4px, -4px);
-        box-shadow: 2px 2px 8px  $color-box-shadow;
+        box-shadow: 0px 0px 4px  $color-box-shadow;
     }
     & img {
         max-width: 100%;

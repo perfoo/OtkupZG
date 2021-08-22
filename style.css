@@ -239,8 +239,8 @@ main {
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding: 0px;
-  -webkit-box-shadow: 4px 8px 16px violet;
-          box-shadow: 4px 8px 16px violet;
+  -webkit-box-shadow: 2px 4px 8px violet;
+          box-shadow: 2px 4px 8px violet;
 }
 
 .card h3, .card h4 {
@@ -251,15 +251,15 @@ main {
 .card:hover {
   -webkit-transform: translate(4px, 4px);
           transform: translate(4px, 4px);
-  -webkit-box-shadow: 16px 16px 40px violet;
-          box-shadow: 16px 16px 40px violet;
+  -webkit-box-shadow: 4px 8px 16px violet;
+          box-shadow: 4px 8px 16px violet;
 }
 
 .card:active {
   -webkit-transform: translate(-4px, -4px);
           transform: translate(-4px, -4px);
-  -webkit-box-shadow: 2px 2px 8px violet;
-          box-shadow: 2px 2px 8px violet;
+  -webkit-box-shadow: 0px 0px 4px violet;
+          box-shadow: 0px 0px 4px violet;
 }
 
 .card img {
