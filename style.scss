@@ -35,7 +35,7 @@ header {
 #h1-h2 {
     color: #2b2a2a44;
     text-align: left;
-    animation: shadow 1.5s ease-in forwards;
+    animation: shadow 1.8s ease-in forwards;
     text-shadow: none;
     & h1{
         margin: 60px 20px 60px 60px;
@@ -70,7 +70,7 @@ nav {
     text-shadow: 2px 2px 2px whitesmoke;
     text-shadow: 0px 0px 2px whitesmoke;
     position: relative;
-    animation: nav 1.5s ease-in forwards;
+    animation: nav 1.8s ease-in forwards;
     transform: translateY(-40px);
 }
 
@@ -179,15 +179,35 @@ main {
     display: flex;
     flex-direction: column;
     margin: 20px 8px 40px 8px;
-    animation: icons 1.5s ease-in forwards;
-    transform: translateX(100px);
+    
+    //transform: translateX(100px);
 }
 
-@keyframes icons{
+#sms {
+    transform: translateX(100px);
+    animation: sms 1s ease-in forwards;
+}
+#whatsapp {
+    transform: translateX(100px);
+    animation: whatsapp 1s ease-in forwards 0.4s;
+}
+#email {
+    transform: translateX(100px);
+    animation: email 1s ease-in forwards 0.8s;
+}
+
+@keyframes sms{
     0%{transform: translateX(100px); opacity: 0;}
     100%{transform: translateX(0px); opacity: 1;}
 }
-
+@keyframes whatsapp{
+    0%{transform: translateX(100px); opacity: 0;}
+    100%{transform: translateX(0px); opacity: 1;}
+}
+@keyframes email{
+    0%{transform: translateX(100px); opacity: 0;}
+    100%{transform: translateX(0px); opacity: 1;}
+}
 .icon{
     margin: 16px;
     display: flex;
