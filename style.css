@@ -303,100 +303,73 @@ main {
 }
 
 #sms {
-  -webkit-transform: translateX(110px);
-          transform: translateX(110px);
-  -webkit-animation: sms 1s ease-in forwards;
-          animation: sms 1s ease-in forwards;
+  opacity: 0;
+  -webkit-animation: sms 1.2s ease-in forwards;
+          animation: sms 1.2s ease-in forwards;
 }
 
 #whatsapp {
-  -webkit-transform: translateX(110px);
-          transform: translateX(110px);
-  -webkit-animation: whatsapp 1s ease-in forwards 0.4s;
-          animation: whatsapp 1s ease-in forwards 0.4s;
+  opacity: 0;
+  -webkit-animation: whatsapp 1.2s ease-in forwards 0.4s;
+          animation: whatsapp 1.2s ease-in forwards 0.4s;
 }
 
 #email {
-  -webkit-transform: translateX(110px);
-          transform: translateX(110px);
-  -webkit-animation: email 1s ease-in forwards 0.8s;
-          animation: email 1s ease-in forwards 0.8s;
+  opacity: 0;
+  -webkit-animation: email 1.2s ease-in forwards 0.8s;
+          animation: email 1.2s ease-in forwards 0.8s;
 }
 
 @-webkit-keyframes sms {
   0% {
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
     opacity: 1;
   }
 }
 
 @keyframes sms {
   0% {
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
     opacity: 1;
   }
 }
 
 @-webkit-keyframes whatsapp {
   0% {
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
     opacity: 1;
   }
 }
 
 @keyframes whatsapp {
   0% {
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
     opacity: 1;
   }
 }
 
 @-webkit-keyframes email {
   0% {
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
     opacity: 1;
   }
 }
 
 @keyframes email {
   0% {
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
     opacity: 1;
   }
 }
