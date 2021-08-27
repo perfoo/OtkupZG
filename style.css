@@ -396,12 +396,12 @@ main {
     text-shadow: none;
   }
   #h1-h2 h1 {
-    margin: 20px 20px 60px 20px;
-    font-size: 2.6rem;
+    margin: 20px 20px 40px 20px;
+    font-size: 2.4rem;
   }
   #h1-h2 h2 {
     margin: 20px 20px 40px 20px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   @-webkit-keyframes shadow {
     0% {
