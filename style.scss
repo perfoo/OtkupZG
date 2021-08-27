@@ -225,16 +225,16 @@ main {
 
 .text {
     background-color: $color-h1;
-    margin: 16px;
+    margin: 16px 80px;
     width: 100%;
     
     & p {
-        margin: 8px 80px;
+        margin: 8px 160px;
         font-size: 105%;
         line-height: 1.4em;
     }
     & h2, h3{
-        margin: 24px 80px 8px 80px;  
+        margin: 32px 160px 0px 160px;  
 
     }
     & div {
@@ -303,7 +303,7 @@ main {
             margin: 8px 24px;
         }
         & h2, h3{
-            margin: 24px 24px 8px 24px;  
+            margin: 32px 24px 0px 24px;  
             text-shadow: 2px 2px 4px $color-h1-light,
                          1px 1px 8px $color-h1-dark;
         }

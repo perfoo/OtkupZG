@@ -400,18 +400,18 @@ main {
 
 .text {
   background-color: cyan;
-  margin: 16px;
+  margin: 16px 80px;
   width: 100%;
 }
 
 .text p {
-  margin: 8px 80px;
+  margin: 8px 160px;
   font-size: 105%;
   line-height: 1.4em;
 }
 
 .text h2, .text h3 {
-  margin: 24px 80px 8px 80px;
+  margin: 32px 160px 0px 160px;
 }
 
 .text div {
@@ -508,7 +508,7 @@ main {
     margin: 8px 24px;
   }
   .text h2, .text h3 {
-    margin: 24px 24px 8px 24px;
+    margin: 32px 24px 0px 24px;
     text-shadow: 2px 2px 4px #99ffff, 1px 1px 8px #006666;
   }
   .text div {
