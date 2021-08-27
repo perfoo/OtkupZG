@@ -179,20 +179,18 @@ main {
     display: flex;
     flex-direction: column;
     margin: 20px 8px 40px 8px;
-    
-    //transform: translateX(100px);
 }
 
 #sms {
-    transform: translateX(100px);
+    transform: translateX(110px);
     animation: sms 1s ease-in forwards;
 }
 #whatsapp {
-    transform: translateX(100px);
+    transform: translateX(110px);
     animation: whatsapp 1s ease-in forwards 0.4s;
 }
 #email {
-    transform: translateX(100px);
+    transform: translateX(110px);
     animation: email 1s ease-in forwards 0.8s;
 }
 
@@ -294,7 +292,6 @@ main {
     .card {
         min-width: 320px;
         max-height: 320px; 
-        //min-height: 260px;
         margin: 16px;
         flex-shrink: 1;
     }

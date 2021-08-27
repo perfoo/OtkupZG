@@ -303,22 +303,22 @@ main {
 }
 
 #sms {
-  -webkit-transform: translateX(100px);
-          transform: translateX(100px);
+  -webkit-transform: translateX(110px);
+          transform: translateX(110px);
   -webkit-animation: sms 1s ease-in forwards;
           animation: sms 1s ease-in forwards;
 }
 
 #whatsapp {
-  -webkit-transform: translateX(100px);
-          transform: translateX(100px);
+  -webkit-transform: translateX(110px);
+          transform: translateX(110px);
   -webkit-animation: whatsapp 1s ease-in forwards 0.4s;
           animation: whatsapp 1s ease-in forwards 0.4s;
 }
 
 #email {
-  -webkit-transform: translateX(100px);
-          transform: translateX(100px);
+  -webkit-transform: translateX(110px);
+          transform: translateX(110px);
   -webkit-animation: email 1s ease-in forwards 0.8s;
           animation: email 1s ease-in forwards 0.8s;
 }
