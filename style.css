@@ -405,13 +405,13 @@ main {
 }
 
 .text p {
-  margin: 8px 160px;
+  margin: 8px 8%;
   font-size: 105%;
   line-height: 1.4em;
 }
 
 .text h2, .text h3 {
-  margin: 32px 160px 0px 160px;
+  margin: 32px 8% 0px 8%;
 }
 
 .text div {
