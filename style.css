@@ -112,6 +112,11 @@ footer {
   margin-top: auto;
 }
 
+footer p {
+  color: white;
+  margin: auto;
+}
+
 nav {
   top: 0px;
   -webkit-box-flex: 1;
@@ -243,9 +248,8 @@ main {
           box-shadow: 2px 4px 8px violet;
 }
 
-.card h3, .card h4 {
+.card h2, .card h3 {
   text-align: center;
-  margin: 4px;
 }
 
 .card:hover {
@@ -271,6 +275,7 @@ main {
 .h3-h4 {
   min-height: 14%;
   text-shadow: 1px 1px cyan;
+  font-size: 90%;
 }
 
 #h1-h2-icons {
