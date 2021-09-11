@@ -227,6 +227,10 @@ main {
   color: cyan;
 }
 
+#zalagaonica a::before {
+  color: black;
+}
+
 .card {
   display: -webkit-box;
   display: -ms-flexbox;

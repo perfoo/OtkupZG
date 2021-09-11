@@ -137,6 +137,9 @@ main {
     & a:active {
         color: $color-h1;
     }
+    & a::before {
+        color: black;
+    }
 }
 
 .card {
