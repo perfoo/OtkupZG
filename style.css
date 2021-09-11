@@ -218,6 +218,14 @@ main {
       flex-wrap: wrap;
 }
 
+#zalagaonica a {
+  text-decoration: none;
+}
+
+#zalagaonica a:active {
+  color: cyan;
+}
+
 .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -253,15 +261,15 @@ main {
 }
 
 .card:hover {
-  -webkit-transform: translate(4px, 4px);
-          transform: translate(4px, 4px);
+  -webkit-transform: translate(2px, 2px);
+          transform: translate(2px, 2px);
   -webkit-box-shadow: 4px 8px 16px violet;
           box-shadow: 4px 8px 16px violet;
 }
 
 .card:active {
-  -webkit-transform: translate(-4px, -4px);
-          transform: translate(-4px, -4px);
+  -webkit-transform: translate(-2px, -2px);
+          transform: translate(-2px, -2px);
   -webkit-box-shadow: 0px 0px 4px violet;
           box-shadow: 0px 0px 4px violet;
 }
