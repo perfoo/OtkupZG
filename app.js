@@ -1,8 +1,4 @@
-let datum = Date();
+let datum = new Date();
+let year = datum.getFullYear();
 
-let cilj = new Date("01 July, 2021");
-
-
-
-console.log(datum);
-console.log(cilj);
+document.getElementById("footer-date").innerHTML = `&copy; OTKUP MOBITELA ZAGREB - ${year}`;
