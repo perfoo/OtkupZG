@@ -110,11 +110,48 @@ footer {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#100a33), to(transparent));
   background-image: linear-gradient(to bottom, #100a33, transparent);
   margin-top: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 footer p {
-  color: white;
+  color: #006666;
   margin: auto;
+}
+
+footer div {
+  margin: 0 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer div p {
+  display: inline-block;
+  margin: 16px;
+  color: white;
+}
+
+footer div a {
+  color: white;
+  text-decoration: none;
+  margin: 16px;
+}
+
+footer div a::after ::before {
+  color: white;
+}
+
+footer div a:active {
+  color: black;
 }
 
 nav {
@@ -174,6 +211,7 @@ nav li {
   padding: 8px;
   background: rgba(180, 154, 163, 0.515);
   font-weight: bold;
+  font-size: 110%;
 }
 
 nav li:hover {
@@ -455,6 +493,16 @@ strong {
   background-color: white;
   width: 100%;
   margin-bottom: 24px;
+}
+
+#otkup-mobitela p {
+  margin: 8px 8%;
+  font-size: 105%;
+  line-height: 1.4em;
+}
+
+#otkup-mobitela h2, #otkup-mobitela h3 {
+  margin: 32px 8% 0px 8%;
 }
 
 @media screen and (max-width: 780px) {
