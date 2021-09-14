@@ -202,6 +202,11 @@ main {
   max-width: 90%;
 }
 
+strong {
+  -webkit-text-decoration: 2px underline white;
+          text-decoration: 2px underline white;
+}
+
 #zalagaonica {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -434,6 +439,11 @@ main {
 
 .text div {
   margin-bottom: 32px;
+}
+
+.text ul {
+  display: block;
+  margin: 8px 16% 16px;
 }
 
 #ne h2 {

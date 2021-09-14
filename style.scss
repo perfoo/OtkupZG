@@ -124,6 +124,10 @@ main {
     max-width: 90%;
 }
 
+strong {
+    text-decoration: 2px underline white;
+}
+
 #zalagaonica {
     display: flex;
     justify-content:space-evenly;
@@ -253,6 +257,10 @@ main {
     }
     & div {
         margin-bottom: 32px;
+    }
+    & ul {
+        display: block;
+        margin: 8px 16% 16px;
     }
 }
 
