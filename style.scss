@@ -24,7 +24,7 @@ header {
     min-height: 50vh;
     width: 100vw;
     background-color: $color-h1-dark;
-    background-image: linear-gradient(to top, rgb(16, 10, 51) ,transparent), url("./img/phones.jpg");
+    background-image: linear-gradient(to top, rgb(16, 10, 51) ,transparent), url("./img/otkup-zagreb-zalagaonica.jpg");
     flex-direction: column;
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,7 +43,6 @@ header {
     }
     & h2 {
         margin: 20px 20px 60px 60px;
-
     }      
 }
 
