@@ -363,4 +363,22 @@ strong {
             margin-bottom: 32px;
         }
     }
+    button {
+        min-width: 60%;
+    }
 }
+
+button {
+    border: none;
+    border-radius: 0px;
+    display: block;
+    margin: 32px 8%;
+    width: 16%;
+    min-height: 10%;
+    line-height: 2;
+    box-shadow: 8px 8px 32px $color-box-shadow;
+}
+
+button:active {
+        box-shadow: 2px 2px 16px $color-box-shadow;
+    }

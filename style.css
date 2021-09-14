@@ -590,5 +590,25 @@ strong {
   .text div {
     margin-bottom: 32px;
   }
+  button {
+    min-width: 60%;
+  }
+}
+
+button {
+  border: none;
+  border-radius: 0px;
+  display: block;
+  margin: 32px 8%;
+  width: 16%;
+  min-height: 10%;
+  line-height: 2;
+  -webkit-box-shadow: 8px 8px 32px violet;
+          box-shadow: 8px 8px 32px violet;
+}
+
+button:active {
+  -webkit-box-shadow: 2px 2px 16px violet;
+          box-shadow: 2px 2px 16px violet;
 }
 /*# sourceMappingURL=style.css.map */
