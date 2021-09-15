@@ -4,10 +4,10 @@ document.getElementById("footer-date").innerHTML = `&copy; OTKUP MOBITELA ZAGREB
 
 function showP() {
   const x = document.getElementById("hide");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
+  if (x.style.display === "block") {
     x.style.display = "none";
+  } else {
+    x.style.display = "block";
   }
 } 
 
