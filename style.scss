@@ -54,6 +54,33 @@ header {
     100%{color: $color-h1; text-shadow: 8px 8px 24px black, 8px 8px 32px $color-box-shadow;}
 }
 
+#karta {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    & img {
+        max-width: 18%;
+        max-height: 18%;
+        margin: 16px 8%;
+    }
+    & p {
+        margin: 16px 4px 16px 12%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #karta {
+        display: flex;
+        flex-direction: column;
+        & img {
+            display: none;
+        }
+    & p {
+        margin: 16px 8%
+    }
+    }
+}
+
 footer {
     display: flex;
     height: 100px;
