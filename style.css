@@ -126,6 +126,9 @@ footer div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -597,12 +600,14 @@ strong {
 
 button {
   border: none;
-  border-radius: 0px;
+  border-radius: 4px;
   display: block;
-  margin: 32px 8%;
+  margin: 24px auto;
   width: 16%;
   min-height: 10%;
   line-height: 2;
+  font-size: medium;
+  font-family: Prompt, Geneva, Verdana, Tahoma, sans-serif;
   -webkit-box-shadow: 8px 8px 32px violet;
           box-shadow: 8px 8px 32px violet;
 }
@@ -610,5 +615,13 @@ button {
 button:active {
   -webkit-box-shadow: 2px 2px 16px violet;
           box-shadow: 2px 2px 16px violet;
+}
+
+button:hover {
+  background-color: white;
+}
+
+#hide {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

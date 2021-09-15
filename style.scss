@@ -68,6 +68,7 @@ footer {
     & div {
         margin: 0 8%;
         display: flex;
+        flex: 1;
         justify-content: flex-start;
         align-items: flex-start;
         & p {
@@ -86,7 +87,7 @@ footer {
         & a:active {
             color: black;
         }
-    } 
+    }
 }
 
 nav {
@@ -370,15 +371,24 @@ strong {
 
 button {
     border: none;
-    border-radius: 0px;
+    border-radius: 4px;
     display: block;
-    margin: 32px 8%;
+    margin: 24px auto;
     width: 16%;
     min-height: 10%;
     line-height: 2;
+    font-size: medium;
+    font-family: Prompt, Geneva, Verdana, Tahoma, sans-serif;
     box-shadow: 8px 8px 32px $color-box-shadow;
 }
 
 button:active {
         box-shadow: 2px 2px 16px $color-box-shadow;
     }
+button:hover {
+    background-color: white;
+}
+
+#hide {
+    display: none;
+}
