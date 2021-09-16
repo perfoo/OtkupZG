@@ -262,6 +262,10 @@ strong {
     opacity: 0;
     animation: email 1.2s ease-in forwards 0.8s;
 }
+#phone {
+    opacity: 0;
+    animation: phone 1.2s ease-in forwards 1.2s;
+}
 
 @keyframes sms{
     0%{ opacity: 0;}
@@ -275,9 +279,13 @@ strong {
     0%{ opacity: 0;}
     100%{ opacity: 1;}
 }
+@keyframes phone{
+    0%{ opacity: 0;}
+    100%{ opacity: 1;}
+}
 
 .icon{
-    margin: 16px;
+    margin: 4px 8px;
     display: flex;
     flex-direction: column;
     text-align: center;

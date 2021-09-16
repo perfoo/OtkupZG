@@ -425,6 +425,12 @@ strong {
           animation: email 1.2s ease-in forwards 0.8s;
 }
 
+#phone {
+  opacity: 0;
+  -webkit-animation: phone 1.2s ease-in forwards 1.2s;
+          animation: phone 1.2s ease-in forwards 1.2s;
+}
+
 @-webkit-keyframes sms {
   0% {
     opacity: 0;
@@ -479,8 +485,26 @@ strong {
   }
 }
 
+@-webkit-keyframes phone {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes phone {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .icon {
-  margin: 16px;
+  margin: 4px 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
