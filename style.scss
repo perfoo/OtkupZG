@@ -68,7 +68,7 @@ header {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1120px) {
     #karta {
         display: flex;
         flex-direction: column;
@@ -78,6 +78,26 @@ header {
     & p {
         margin: 16px 8%
     }
+    }
+     .icon img {
+        width: 35px;
+    }
+    .icon {
+        margin: 8px 4px;
+        font-size: 80%;
+    }
+    #icons {
+        margin: 0px 0px 18px 0px;
+    }
+    #h1-h2 {
+        & h1{
+            margin: 20px 10px 40px 20px;
+            font-size: 2.4rem;
+        }
+        & h2 {
+            margin: 20px 10px 40px 20px;
+            font-size: 1.2rem;
+        }      
     }
 }
 
