@@ -404,7 +404,7 @@ strong {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 20px 8px 40px 8px;
+  margin: 8px 8px 8px 8px;
 }
 
 #sms {
@@ -634,14 +634,14 @@ strong {
     display: none;
   }
   .icon img {
-    width: 40px;
+    width: 30px;
   }
   .icon {
     margin: 16px 0px;
     font-size: 80%;
   }
   #icons {
-    margin: 8px 0px 30px 8px;
+    margin: 4px 0px 8px 8px;
   }
   .card {
     min-width: 320px;
