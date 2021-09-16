@@ -341,6 +341,10 @@ strong {
     & h2, h3{
         margin: 32px 8% 0px 8%;  
     }
+    ul {
+        display: block;
+        margin: 4px 10% 16px 16%;
+    }
 }
 @media screen and (max-width: 780px) {
     #h1-h2 {
