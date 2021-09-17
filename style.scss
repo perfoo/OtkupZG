@@ -103,7 +103,7 @@ header {
 
 footer {
     display: flex;
-    height: 100px;
+    min-height: 100px;
     width: 100%;
     background-image: linear-gradient(to bottom, rgb(16, 10, 51) ,transparent);
     margin-top: auto;
@@ -119,11 +119,11 @@ footer {
         flex: 1;
         justify-content: flex-start;
         align-items: flex-start;
-        & p {
+       /* & p {
             display: inline-block;
             margin: 16px;
             color: white;
-        }
+        } */
         & a {
             color: white;
             text-decoration: none;
@@ -367,6 +367,9 @@ strong {
     }
 }
 @media screen and (max-width: 780px) {
+    header {
+        min-height: 40vh;
+    }
     #h1-h2 {
         color: #2b2a2a44;
         text-align: left;
@@ -401,7 +404,7 @@ strong {
         font-size: 80%;
     }
     #icons {
-        margin: 0px 0px 18px 0px;
+        margin: 0px 0px 24px 0px;
     }
     .card {
         min-width: 320px;
@@ -427,6 +430,15 @@ strong {
     button {
         min-width: 60%;
     }
+    .footer-ul {
+        display: block;
+        & :last-child {
+            display: inline;
+        }
+        & :nth-child(2) {
+            display: inline;
+        }
+    }
 }
 
 button {
@@ -451,4 +463,8 @@ button:hover {
 
 #hide {
     display: none;
+}
+.footer-ul {
+    color: white;
+    list-style: none;
 }

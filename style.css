@@ -163,7 +163,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100px;
+  min-height: 100px;
   width: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#100a33), to(transparent));
   background-image: linear-gradient(to bottom, #100a33, transparent);
@@ -194,12 +194,11 @@ footer div {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-}
-
-footer div p {
-  display: inline-block;
-  margin: 16px;
-  color: white;
+  /* & p {
+            display: inline-block;
+            margin: 16px;
+            color: white;
+        } */
 }
 
 footer div a {
@@ -597,6 +596,9 @@ strong {
 }
 
 @media screen and (max-width: 780px) {
+  header {
+    min-height: 40vh;
+  }
   #h1-h2 {
     color: #2b2a2a44;
     text-align: left;
@@ -659,7 +661,7 @@ strong {
     font-size: 80%;
   }
   #icons {
-    margin: 0px 0px 18px 0px;
+    margin: 0px 0px 24px 0px;
   }
   .card {
     min-width: 320px;
@@ -683,6 +685,15 @@ strong {
   }
   button {
     min-width: 60%;
+  }
+  .footer-ul {
+    display: block;
+  }
+  .footer-ul :last-child {
+    display: inline;
+  }
+  .footer-ul :nth-child(2) {
+    display: inline;
   }
 }
 
@@ -711,5 +722,10 @@ button:hover {
 
 #hide {
   display: none;
+}
+
+.footer-ul {
+  color: white;
+  list-style: none;
 }
 /*# sourceMappingURL=style.css.map */
