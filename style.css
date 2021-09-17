@@ -687,16 +687,17 @@ strong {
     min-width: 60%;
   }
   .footer-ul {
+    font-size: 90%;
     margin: 0px;
     display: block;
   }
   .footer-ul :last-child {
     display: inline;
-    margin: 0px 1px;
+    margin: 0px;
   }
   .footer-ul :nth-child(2) {
     display: inline;
-    margin: 0px 1px;
+    margin: 0px;
   }
   .footer-ul :nth-child(3) {
     display: inline;

@@ -431,15 +431,16 @@ strong {
         min-width: 60%;
     }
     .footer-ul {
+        font-size: 90%;
         margin: 0px;
         display: block;
         & :last-child {
             display: inline;
-            margin: 0px 1px;
+            margin: 0px ;
         }
         & :nth-child(2) {
             display: inline;
-            margin: 0px 1px;
+            margin: 0px ;
         }
         & :nth-child(3) {
             display: inline;
