@@ -692,11 +692,11 @@ strong {
   }
   .footer-ul :last-child {
     display: inline;
-    margin: 0px 2px;
+    margin: 0px 1px;
   }
   .footer-ul :nth-child(2) {
     display: inline;
-    margin: 0px 2px;
+    margin: 0px 1px;
   }
   .footer-ul :nth-child(3) {
     display: inline;
