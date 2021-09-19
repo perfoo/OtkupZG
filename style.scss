@@ -463,6 +463,9 @@ button:hover {
 .footer-ul {
     color: white;
     list-style: none;
+    & li {
+        margin-top: 8px;
+    }
 }
 .share {
     list-style: none;

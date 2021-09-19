@@ -732,6 +732,10 @@ button:hover {
   list-style: none;
 }
 
+.footer-ul li {
+  margin-top: 8px;
+}
+
 .share {
   list-style: none;
 }
