@@ -119,11 +119,6 @@ footer {
         flex: 1;
         justify-content: flex-start;
         align-items: flex-start;
-       /* & p {
-            display: inline-block;
-            margin: 16px;
-            color: white;
-        } */
         & a {
             color: white;
             text-decoration: none;
@@ -351,7 +346,6 @@ strong {
     width: 100%; 
     margin-bottom: 24px;
 }
-
 #otkup-mobitela {
     & p {
         margin: 8px 8%;
@@ -384,7 +378,6 @@ strong {
             font-size: 1.2rem;
         }      
     }
-    
     @keyframes shadow {
         0%{text-shadow: none;}
         33%{text-shadow: 4px 4px 16px $color-h1;}
@@ -392,7 +385,6 @@ strong {
         75%{color: $color-h1;}
         100%{color: $color-h1; text-shadow: 8px 8px 24px black, 8px 8px 32px $color-box-shadow;}
     }
-    
     span {
         display: none;
     }
@@ -412,7 +404,6 @@ strong {
         margin: 16px;
         flex-shrink: 1;
     }
-
     .text {
         margin: 8px;
         & p {
@@ -448,7 +439,6 @@ strong {
         }
     }
 }
-
 button {
     border: none;
     border-radius: 4px;
@@ -461,18 +451,25 @@ button {
     font-family: Prompt, Geneva, Verdana, Tahoma, sans-serif;
     box-shadow: 8px 8px 32px $color-box-shadow;
 }
-
 button:active {
         box-shadow: 2px 2px 16px $color-box-shadow;
     }
 button:hover {
     background-color: white;
 }
-
 #hide {
     display: none;
 }
 .footer-ul {
     color: white;
     list-style: none;
+}
+.share {
+    list-style: none;
+    & li { 
+        margin: 8px 24px;
+        & img {
+            max-width: 40px;
+        }
+    }
 }

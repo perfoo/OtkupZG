@@ -194,11 +194,6 @@ footer div {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  /* & p {
-            display: inline-block;
-            margin: 16px;
-            color: white;
-        } */
 }
 
 footer div a {
@@ -735,5 +730,17 @@ button:hover {
 .footer-ul {
   color: white;
   list-style: none;
+}
+
+.share {
+  list-style: none;
+}
+
+.share li {
+  margin: 8px 24px;
+}
+
+.share li img {
+  max-width: 40px;
 }
 /*# sourceMappingURL=style.css.map */
