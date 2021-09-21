@@ -24,8 +24,8 @@ header {
     min-height: 50vh;
     width: 100vw;
     background-color: $color-h1-dark;
-    background-image: url("./img/otkup-zagreb-zalagaonica.jpg");
-    background-image: linear-gradient(to top, rgb(16, 10, 51) ,transparent), url("./img/otkup-zagreb-zalagaonica.webp");
+    // background-image: url("./img/otkup-zagreb-zalagaonica.jpg");
+    background-image: linear-gradient(to top, rgb(16, 10, 51) ,transparent), url("./img/otkup-zagreb-zalagaonica.webp"), url("./img/otkup-zagreb-zalagaonica.jpg") ;
     flex-direction: column;
     background-repeat: no-repeat;
     background-size: cover;
