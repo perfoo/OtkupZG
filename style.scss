@@ -477,3 +477,23 @@ button:hover {
         }
     }
 }
+
+#error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    flex-grow: 0;
+    & img {
+        max-width: 260px;
+        border-radius: 25%;
+    }
+    & p {
+        align-self: flex-start;
+    }
+    & ul {
+        display: block;
+        margin-left: 4%;
+    }
+}

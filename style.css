@@ -748,4 +748,40 @@ button:hover {
 .share li img {
   max-width: 40px;
 }
+
+#error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+#error img {
+  max-width: 260px;
+  border-radius: 25%;
+}
+
+#error p {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+#error ul {
+  display: block;
+  margin-left: 4%;
+}
 /*# sourceMappingURL=style.css.map */
