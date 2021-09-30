@@ -1,500 +1,551 @@
 @import "./fonts";
 @import "./colors";
 
-*, *::before, *::after {
-    margin: 0px;
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  margin: 0px;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    flex-wrap: nowrap;
-    overflow-x: hidden;
-    font-family: Prompt, Geneva, Verdana, Tahoma, sans-serif;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  font-family: Prompt, Geneva, Verdana, Tahoma, sans-serif;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  font-weight: 300;
 }
 
 header {
-    display: flex;
-    min-height: 50vh;
-    width: 100vw;
-    background-color: $color-h1-dark;
-    // background-image: url("./img/otkup-zagreb-zalagaonica.jpg");
-    background-image: linear-gradient(to top, rgb(16, 10, 51) ,transparent), url("./img/otkup-zagreb-zalagaonica.webp"), url("./img/otkup-zagreb-zalagaonica.jpg") ;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 16px;
-    //box-shadow: 0px 8px 8px $color-box-shadow;
+  display: flex;
+  min-height: 50vh;
+  width: 100vw;
+  background-color: $color-h1-dark;
+  background-image: linear-gradient(to top, rgb(16, 10, 51), transparent),
+    url("./img/otkup-zagreb-zalagaonica.webp"),
+    url("./img/otkup-zagreb-zalagaonica.jpg");
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 16px;
+  //box-shadow: 0px 8px 8px $color-box-shadow;
 }
-    
+
 #h1-h2 {
-    color: #2b2a2a44;
-    text-align: left;
-    animation: shadow 1.8s ease-in forwards;
-    text-shadow: none;
-    & h1 {
-        margin: 60px 20px 60px 60px;
-        font-size: 4rem;
-    }
-    & h2 {
-        margin: 20px 20px 60px 60px;
-    }      
+  color: #2b2a2a44;
+  text-align: left;
+  animation: shadow 1.8s ease-in forwards;
+  text-shadow: none;
+  & h1 {
+    margin: 60px 20px 60px 60px;
+    font-size: 4rem;
+  }
+  & h2 {
+    margin: 20px 20px 60px 60px;
+  }
 }
 
 @keyframes shadow {
-    0%{text-shadow: none;}
-    33%{text-shadow: 4px 4px 16px $color-h1;}
-    66%{text-shadow: none;}
-    75%{color: $color-h1;}
-    100%{color: $color-h1; text-shadow: 8px 8px 24px black, 8px 8px 32px $color-box-shadow;}
+  0% {
+    text-shadow: none;
+  }
+  33% {
+    text-shadow: 4px 4px 16px $color-h1;
+  }
+  66% {
+    text-shadow: none;
+  }
+  75% {
+    color: $color-h1;
+  }
+  100% {
+    color: $color-h1;
+    text-shadow: 8px 8px 24px black, 8px 8px 32px $color-box-shadow;
+  }
 }
 
 #karta {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    & img {
-        max-width: 18%;
-        max-height: 18%;
-        margin: 16px 8%;
-    }
-    & p {
-        margin: 16px 4px 16px 12%;
-    }
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  & img {
+    max-width: 18%;
+    max-height: 18%;
+    margin: 16px 8%;
+  }
+  & p {
+    margin: 16px 4px 16px 12%;
+  }
 }
 
 @media screen and (max-width: 1120px) {
-    #karta {
-        display: flex;
-        flex-direction: column;
-        & img {
-            display: none;
-        }
+  #karta {
+    display: flex;
+    flex-direction: column;
+    & img {
+      display: none;
+    }
     & p {
-        margin: 16px 8%
+      margin: 16px 8%;
     }
+  }
+  .icon img {
+    width: 35px;
+  }
+  .icon {
+    margin: 8px 4px;
+    font-size: 80%;
+  }
+  #icons {
+    margin: 0px 0px 18px 0px;
+  }
+  #h1-h2 {
+    & h1 {
+      margin: 20px 10px 40px 20px;
+      font-size: 2.4rem;
     }
-     .icon img {
-        width: 35px;
+    & h2 {
+      margin: 20px 10px 40px 20px;
+      font-size: 1.2rem;
     }
-    .icon {
-        margin: 8px 4px;
-        font-size: 80%;
-    }
-    #icons {
-        margin: 0px 0px 18px 0px;
-    }
-    #h1-h2 {
-        & h1{
-            margin: 20px 10px 40px 20px;
-            font-size: 2.4rem;
-        }
-        & h2 {
-            margin: 20px 10px 40px 20px;
-            font-size: 1.2rem;
-        }      
-    }
+  }
 }
 
 footer {
+  display: flex;
+  min-height: 100px;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgb(16, 10, 51), transparent);
+  margin-top: auto;
+  flex-direction: column;
+  overflow-x: hidden;
+  & p {
+    color: $color-h1-dark;
+    margin: auto;
+  }
+  & div {
+    margin: 0 8%;
     display: flex;
-    min-height: 100px;
-    width: 100%;
-    background-image: linear-gradient(to bottom, rgb(16, 10, 51) ,transparent);
-    margin-top: auto;
-    flex-direction: column;
-    overflow-x: hidden;
-    & p {
-        color: $color-h1-dark;
-        margin: auto;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+    & a {
+      color: white;
+      text-decoration: none;
+      margin: 16px;
     }
-    & div {
-        margin: 0 8%;
-        display: flex;
-        flex: 1;
-        justify-content: flex-start;
-        align-items: flex-start;
-        & a {
-            color: white;
-            text-decoration: none;
-            margin: 16px;
-        }
-        & a::after ::before  {
-            color: white;
-        }
-        & a:active {
-            color: black;
-        }
+    & a::after ::before {
+      color: white;
     }
+    & a:active {
+      color: black;
+    }
+  }
 }
 
 nav {
-    top: 0px;
-    flex: 1;
-    text-shadow: 2px 2px 2px whitesmoke;
-    text-shadow: 0px 0px 2px whitesmoke;
-    position: relative;
-    animation: nav 1.8s ease-in forwards;
-    transform: translateY(-40px);
+  top: 0px;
+  flex: 1;
+  text-shadow: 2px 2px 2px whitesmoke;
+  text-shadow: 0px 0px 2px whitesmoke;
+  position: relative;
+  animation: nav 1.8s ease-in forwards;
+  transform: translateY(-40px);
 }
 
 @keyframes nav {
-    0%{transform: translateY(-40px);}
-    100%{transform: translateY(0px);}
+  0% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 ul {
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
-    
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
 }
 
 nav li {
-    display: inline-block;
-    border-left: white 1px solid;
-    flex: 1;
-    text-align: center;
-    padding: 8px;
-    background:rgba(180, 154, 163, 0.515);
-    font-weight: bold;
-    font-size: 110%;
-    &:hover {
-        background:rgba(92, 57, 69, 0.715);
-        box-shadow: 1px 2px 16px $color-box-shadow;
-        text-shadow: 1px 1px 4px white,
-                     2px 2px 8px $color-box-shadow;
-    }
+  display: inline-block;
+  border-left: white 1px solid;
+  flex: 1;
+  text-align: center;
+  padding: 8px;
+  background: rgba(180, 154, 163, 0.515);
+  font-weight: bold;
+  font-size: 110%;
+  &:hover {
+    background: rgba(92, 57, 69, 0.715);
+    box-shadow: 1px 2px 16px $color-box-shadow;
+    text-shadow: 1px 1px 4px white, 2px 2px 8px $color-box-shadow;
+  }
 }
 
 nav li a {
-    color:#2b2a2a;
+  color: #2b2a2a;
+  text-decoration: none;
+  &::after {
     text-decoration: none;
-    &::after {
-        text-decoration: none;
-        color: #2b2a2a;
-    }
-    &:active {
-        color: lightgray;
-        text-shadow: 1px 1px 8px black;
-    }
+    color: #2b2a2a;
+  }
+  &:active {
+    color: lightgray;
+    text-shadow: 1px 1px 8px black;
+  }
 }
 
 main {
-    max-width: 90%;
+  max-width: 90%;
 }
 
 strong {
-    text-decoration: 2px underline white;
+  text-decoration: 2px underline white;
 }
 
 #zalagaonica {
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-    align-content: space-between;
-    flex-wrap: wrap;
-    & a {
-        color: black;
-        text-decoration: none;
-    }
-    & a:active {
-        color: $color-h1;
-    }
-    & a::before {
-        color: black;
-    }
-    
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  & a {
+    color: black;
+    text-decoration: none;
+  }
+  & a:active {
+    color: $color-h1;
+  }
+  & a::before {
+    color: black;
+  }
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: white;
-    background-image: linear-gradient(to top, $color-h1, transparent ,transparent, transparent, transparent);
-    //background-image: linear-gradient(to top, $color-h1, transparent ,transparent), url("./img/mobiteli.jpg");
-    max-width: 380px;
-    min-height: 320px;
-    margin: 32px;
-    flex-shrink: 0;
-    flex-grow: 1;
-    padding: 0px;
-    box-shadow: 2px 4px 8px  $color-box-shadow;
-    & h2, h3 {
-        text-align: center;
-    }
-    &:hover {
-        transform: translate(2px, 2px);
-        box-shadow: 4px 8px 16px  $color-box-shadow;
-    }
-    &:active {
-        transform: translate(-2px, -2px);
-        box-shadow: 0px 0px 4px  $color-box-shadow;
-    }
-    & img {
-        max-width: 100%;
-        max-height: 100%;
-        margin: 8px 0px;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  background-image: linear-gradient(
+    to top,
+    $color-h1,
+    transparent,
+    transparent,
+    transparent,
+    transparent
+  );
+  //background-image: linear-gradient(to top, $color-h1, transparent ,transparent), url("./img/mobiteli.jpg");
+  min-width: 380px;
+  min-height: 320px;
+  margin: 32px;
+  flex-shrink: 0;
+  flex-grow: 1;
+  padding: 0px;
+  box-shadow: 2px 4px 8px $color-box-shadow;
+  & h2,
+  h3 {
+    text-align: center;
+  }
+  &:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 4px 8px 16px $color-box-shadow;
+  }
+  &:active {
+    transform: translate(-2px, -2px);
+    box-shadow: 0px 0px 4px $color-box-shadow;
+  }
+  & img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 8px 0px;
+  }
 }
 
 .h3-h4 {
-    min-height: 14%;
-    text-shadow: 1px 1px $color-h1;
-    font-size: 90%;
+  min-height: 14%;
+  text-shadow: 1px 1px $color-h1;
+  font-size: 90%;
 }
 
 #h1-h2-icons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 #icons {
-    display: flex;
-    flex-direction: column;
-    margin: 8px 8px 8px 8px;
+  display: flex;
+  flex-direction: column;
+  margin: 8px 8px 8px 8px;
 }
 #sms {
-    opacity: 0;
-    animation: sms 1.2s ease-in forwards;
+  opacity: 0;
+  animation: sms 1.2s ease-in forwards;
 }
 #whatsapp {
-    opacity: 0;
-    animation: whatsapp 1.2s ease-in forwards 0.4s;
+  opacity: 0;
+  animation: whatsapp 1.2s ease-in forwards 0.4s;
 }
 #email {
-    opacity: 0;
-    animation: email 1.2s ease-in forwards 0.8s;
+  opacity: 0;
+  animation: email 1.2s ease-in forwards 0.8s;
 }
 #phone {
+  opacity: 0;
+  animation: phone 1.2s ease-in forwards 1.2s;
+}
+
+@keyframes sms {
+  0% {
     opacity: 0;
-    animation: phone 1.2s ease-in forwards 1.2s;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes whatsapp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes email {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes phone {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-@keyframes sms{
-    0%{ opacity: 0;}
-    100%{ opacity: 1;}
-}
-@keyframes whatsapp{
-    0%{ opacity: 0;}
-    100%{ opacity: 1;}
-}
-@keyframes email{
-    0%{ opacity: 0;}
-    100%{ opacity: 1;}
-}
-@keyframes phone{
-    0%{ opacity: 0;}
-    100%{ opacity: 1;}
-}
-
-.icon{
-    margin: 4px 8px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: white;
-    text-shadow: 1px 2px 8px black,
-                 2px 4px 16px $color-box-shadow;
-     &:hover {
-         transform: translate(1px, 1px);
-     }
-     &:active {
-         transform: translate(-1px, -1px);
-     }
+.icon {
+  margin: 4px 8px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 2px 8px black, 2px 4px 16px $color-box-shadow;
+  &:hover {
+    transform: translate(1px, 1px);
+  }
+  &:active {
+    transform: translate(-1px, -1px);
+  }
 }
 
 .text {
-    background-color: $color-h1;
-    margin: 16px 80px;
-    width: 100%;
-    
-    & p {
-        margin: 8px 8%;
-        font-size: 105%;
-        line-height: 1.4em;
-    }
-    & h2, h3{
-        margin: 32px 8% 0px 8%;  
-    }
-    & div {
-        margin-bottom: 32px;
-    }
-    & ul {
-        display: block;
-        margin: 8px 16% 16px;
-    }
+  background-color: $color-h1;
+  margin: 16px 80px;
+  width: 100%;
+
+  & p {
+    margin: 8px 8%;
+    font-size: 105%;
+    line-height: 1.4em;
+  }
+  & h2,
+  h3 {
+    margin: 32px 8% 0px 8%;
+  }
+  & div {
+    margin-bottom: 32px;
+  }
+  & ul {
+    display: block;
+    margin: 8px 16% 16px;
+  }
 }
 #ne {
-    & h2 {
-        text-decoration: 2px underline $color-box-shadow ;
-    }
+  & h2 {
+    text-decoration: 2px underline $color-box-shadow;
+  }
 }
 #location {
-    background-color: white;
-    width: 100%; 
-    margin-bottom: 24px;
+  background-color: white;
+  width: 100%;
+  margin-bottom: 24px;
 }
 #otkup-mobitela {
-    & p {
-        margin: 8px 8%;
-        font-size: 105%;
-        line-height: 1.4em;
-    }
-    & h2, h3{
-        margin: 32px 8% 0px 8%;  
-    }
-    ul {
-        display: block;
-        margin: 4px 10% 16px 16%;
-    }
+  & p {
+    margin: 8px 8%;
+    font-size: 105%;
+    line-height: 1.4em;
+  }
+  & h2,
+  h3 {
+    margin: 32px 8% 0px 8%;
+  }
+  ul {
+    display: block;
+    margin: 4px 10% 16px 16%;
+  }
 }
 @media screen and (max-width: 780px) {
-    header {
-        min-height: 40vh;
+  header {
+    min-height: 40vh;
+  }
+  #h1-h2 {
+    color: #2b2a2a44;
+    text-align: left;
+    animation: shadow 1.5s ease-in forwards;
+    text-shadow: none;
+    & h1 {
+      margin: 20px 20px 40px 20px;
+      font-size: 2.4rem;
     }
-    #h1-h2 {
-        color: #2b2a2a44;
-        text-align: left;
-        animation: shadow 1.5s ease-in forwards;
-        text-shadow: none;
-        & h1{
-            margin: 20px 20px 40px 20px;
-            font-size: 2.4rem;
-        }
-        & h2 {
-            margin: 20px 20px 40px 20px;
-            font-size: 1.2rem;
-        }      
+    & h2 {
+      margin: 20px 20px 40px 20px;
+      font-size: 1.2rem;
     }
-    @keyframes shadow {
-        0%{text-shadow: none;}
-        33%{text-shadow: 4px 4px 16px $color-h1;}
-        66%{text-shadow: none;}
-        75%{color: $color-h1;}
-        100%{color: $color-h1; text-shadow: 8px 8px 24px black, 8px 8px 32px $color-box-shadow;}
+  }
+  @keyframes shadow {
+    0% {
+      text-shadow: none;
     }
-    span {
-        display: none;
+    33% {
+      text-shadow: 4px 4px 16px $color-h1;
     }
-    .icon img {
-        width: 30px;
-        height: 30px;
+    66% {
+      text-shadow: none;
     }
-    .icon {
-        margin: 0px 0px;
-        font-size: 80%;
+    75% {
+      color: $color-h1;
     }
-    #icons {
-        margin: 24px 0px 24px 0px;
+    100% {
+      color: $color-h1;
+      text-shadow: 8px 8px 24px black, 8px 8px 32px $color-box-shadow;
     }
-    .card {
-        min-width: 320px;
-        max-height: 320px; 
-        margin: 16px;
-        flex-shrink: 1;
+  }
+  span {
+    display: none;
+  }
+  .icon img {
+    width: 30px;
+    height: 30px;
+  }
+  .icon {
+    margin: 0px 0px;
+    font-size: 80%;
+  }
+  #icons {
+    margin: 24px 0px 24px 0px;
+  }
+  .card {
+    min-width: 320px;
+    max-height: 320px;
+    margin: 16px;
+    flex-shrink: 1;
+  }
+  .text {
+    margin: 8px;
+    & p {
+      margin: 8px 24px;
     }
-    .text {
-        margin: 8px;
-        & p {
-            margin: 8px 24px;
-        }
-        & h2, h3{
-            margin: 32px 24px 0px 24px;  
-            text-shadow: 2px 2px 4px $color-h1-light,
-                         1px 1px 8px $color-h1-dark;
-        }
-        & div {
-            margin-bottom: 32px;
-        }
+    & h2,
+    h3 {
+      margin: 32px 24px 0px 24px;
+      text-shadow: 2px 2px 4px $color-h1-light, 1px 1px 8px $color-h1-dark;
     }
-    button {
-        min-width: 60%;
+    & div {
+      margin-bottom: 32px;
     }
-    .footer-ul {
-        font-size: 90%;
-        margin: 0px;
-        display: block;
-        & :last-child {
-            display: inline;
-            margin: 0px ;
-        }
-        & :nth-child(2) {
-            display: inline;
-            margin: 0px ;
-        }
-        & :nth-child(3) {
-            display: inline;
-            margin: 0px;
-        }
+  }
+  button {
+    min-width: 60%;
+  }
+  .footer-ul {
+    font-size: 90%;
+    margin: 0px;
+    display: block;
+    & :last-child {
+      display: inline;
+      margin: 0px;
     }
+    & :nth-child(2) {
+      display: inline;
+      margin: 0px;
+    }
+    & :nth-child(3) {
+      display: inline;
+      margin: 0px;
+    }
+  }
 }
 button {
-    border: none;
-    border-radius: 4px;
-    display: block;
-    margin: 24px auto;
-    width: 16%;
-    min-height: 10%;
-    line-height: 2;
-    font-size: medium;
-    font-family: Prompt, Geneva, Verdana, Tahoma, sans-serif;
-    box-shadow: 8px 8px 32px $color-box-shadow;
+  border: none;
+  border-radius: 4px;
+  display: block;
+  margin: 24px auto;
+  width: 16%;
+  min-height: 10%;
+  line-height: 2;
+  font-size: medium;
+  font-family: Prompt, Geneva, Verdana, Tahoma, sans-serif;
+  box-shadow: 8px 8px 32px $color-box-shadow;
 }
 button:active {
-        box-shadow: 2px 2px 16px $color-box-shadow;
-    }
+  box-shadow: 2px 2px 16px $color-box-shadow;
+}
 button:hover {
-    background-color: white;
+  background-color: white;
 }
 #hide {
-    display: none;
+  display: none;
 }
 .footer-ul {
-    color: white;
-    list-style: none;
-    & li {
-        margin-top: 8px;
-    }
+  color: white;
+  list-style: none;
+  & li {
+    margin-top: 8px;
+  }
 }
 .share {
-    list-style: none;
-    & li { 
-        margin: 8px 24px;
-        & img {
-            max-width: 40px;
-        }
+  list-style: none;
+  & li {
+    margin: 8px 24px;
+    & img {
+      max-width: 40px;
     }
+  }
 }
 
 #error {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    flex-grow: 0;
-    & img {
-        max-width: 260px;
-        border-radius: 25%;
-    }
-    & p {
-        align-self: flex-start;
-    }
-    & ul {
-        display: block;
-        margin-left: 4%;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  flex-grow: 0;
+  & img {
+    max-width: 260px;
+    border-radius: 25%;
+  }
+  & p {
+    align-self: flex-start;
+  }
+  & ul {
+    display: block;
+    margin-left: 4%;
+  }
 }

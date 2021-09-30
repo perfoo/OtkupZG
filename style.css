@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -347,7 +349,7 @@ strong {
   background-color: white;
   background-image: -webkit-gradient(linear, left bottom, left top, from(cyan), color-stop(transparent), color-stop(transparent), color-stop(transparent), to(transparent));
   background-image: linear-gradient(to top, cyan, transparent, transparent, transparent, transparent);
-  max-width: 380px;
+  min-width: 380px;
   min-height: 320px;
   margin: 32px;
   -ms-flex-negative: 0;
@@ -360,7 +362,8 @@ strong {
           box-shadow: 2px 4px 8px violet;
 }
 
-.card h2, .card h3 {
+.card h2,
+.card h3 {
   text-align: center;
 }
 
@@ -551,7 +554,8 @@ strong {
   line-height: 1.4em;
 }
 
-.text h2, .text h3 {
+.text h2,
+.text h3 {
   margin: 32px 8% 0px 8%;
 }
 
@@ -581,7 +585,8 @@ strong {
   line-height: 1.4em;
 }
 
-#otkup-mobitela h2, #otkup-mobitela h3 {
+#otkup-mobitela h2,
+#otkup-mobitela h3 {
   margin: 32px 8% 0px 8%;
 }
 
@@ -672,7 +677,8 @@ strong {
   .text p {
     margin: 8px 24px;
   }
-  .text h2, .text h3 {
+  .text h2,
+  .text h3 {
     margin: 32px 24px 0px 24px;
     text-shadow: 2px 2px 4px #99ffff, 1px 1px 8px #006666;
   }
