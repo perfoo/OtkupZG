@@ -557,6 +557,7 @@ strong {
 .text h2,
 .text h3 {
   margin: 32px 8% 0px 8%;
+  text-shadow: 2px 2px 4px #99ffff, 1px 1px 8px #006666;
 }
 
 .text div {
@@ -588,6 +589,7 @@ strong {
 #otkup-mobitela h2,
 #otkup-mobitela h3 {
   margin: 32px 8% 0px 8%;
+  text-shadow: 2px 2px 4px #99ffff, 1px 1px 8px #006666;
 }
 
 #otkup-mobitela ul {

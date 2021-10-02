@@ -367,6 +367,7 @@ strong {
   & h2,
   h3 {
     margin: 32px 8% 0px 8%;
+    text-shadow: 2px 2px 4px $color-h1-light, 1px 1px 8px $color-h1-dark;
   }
   & div {
     margin-bottom: 32px;
@@ -395,6 +396,7 @@ strong {
   & h2,
   h3 {
     margin: 32px 8% 0px 8%;
+    text-shadow: 2px 2px 4px $color-h1-light, 1px 1px 8px $color-h1-dark;
   }
   ul {
     display: block;
