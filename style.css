@@ -37,8 +37,8 @@ header {
   min-height: 50vh;
   width: 100vw;
   background-color: #006666;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#100a33), to(transparent)), url("./img/otkup-zagreb-zalagaonica.webp"), url("./img/otkup-zagreb-zalagaonica.jpg");
-  background-image: linear-gradient(to top, #100a33, transparent), url("./img/otkup-zagreb-zalagaonica.webp"), url("./img/otkup-zagreb-zalagaonica.jpg");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#100a33), to(transparent)), url("./img/otkup-zagreb-zalagaonica.webp");
+  background-image: linear-gradient(to top, #100a33, transparent), url("./img/otkup-zagreb-zalagaonica.webp");
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
