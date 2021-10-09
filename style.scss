@@ -1,4 +1,3 @@
-@import "./fonts";
 @import "./colors";
 
 *,
@@ -39,7 +38,7 @@ header {
 #h1-h2 {
   color: #2b2a2a44;
   text-align: left;
-  animation: shadow 1.8s ease-in forwards;
+  animation: shadow 1.6s ease-in forwards;
   text-shadow: none;
   & h1 {
     margin: 60px 20px 60px 60px;
@@ -154,7 +153,7 @@ nav {
   text-shadow: 2px 2px 2px whitesmoke;
   text-shadow: 0px 0px 2px whitesmoke;
   position: relative;
-  animation: nav 1.8s ease-in forwards;
+  animation: nav 1.5s ease-in forwards;
   transform: translateY(-40px);
 }
 
@@ -291,19 +290,19 @@ strong {
 }
 #sms {
   opacity: 0;
-  animation: sms 1.2s ease-in forwards;
+  animation: sms 1s ease-in forwards;
 }
 #whatsapp {
   opacity: 0;
-  animation: whatsapp 1.2s ease-in forwards 0.4s;
+  animation: whatsapp 1s ease-in forwards 0.3s;
 }
 #email {
   opacity: 0;
-  animation: email 1.2s ease-in forwards 0.8s;
+  animation: email 1s ease-in forwards 0.6s;
 }
 #phone {
   opacity: 0;
-  animation: phone 1.2s ease-in forwards 1.2s;
+  animation: phone 1s ease-in forwards 0.9s;
 }
 
 @keyframes sms {
