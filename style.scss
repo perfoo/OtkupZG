@@ -407,9 +407,9 @@ strong {
     min-height: 40vh;
   }
   #h1-h2 {
-    color: #2b2a2a44;
+    color: #2b2a2a00;
     text-align: left;
-    animation: shadow 1.5s ease-in forwards;
+    animation: shadow 1.2s ease-in forwards;
     text-shadow: none;
     & h1 {
       margin: 20px 20px 40px 20px;
@@ -421,17 +421,11 @@ strong {
     }
   }
   @keyframes shadow {
-    0% {
-      text-shadow: none;
-    }
     33% {
       text-shadow: 4px 4px 16px $color-h1;
     }
     66% {
       text-shadow: none;
-    }
-    75% {
-      color: $color-h1;
     }
     100% {
       color: $color-h1;
