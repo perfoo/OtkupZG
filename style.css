@@ -220,8 +220,8 @@ nav {
   text-shadow: 2px 2px 2px whitesmoke;
   text-shadow: 0px 0px 2px whitesmoke;
   position: relative;
-  -webkit-animation: nav 1.5s ease-in forwards;
-          animation: nav 1.5s ease-in forwards;
+  -webkit-animation: nav 1.4s ease-in forwards;
+          animation: nav 1.4s ease-in forwards;
   -webkit-transform: translateY(-40px);
           transform: translateY(-40px);
 }
@@ -420,33 +420,11 @@ strong {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 8px 8px 8px 8px;
+  -webkit-animation: icons 1.2s ease-in forwards;
+          animation: icons 1.2s ease-in forwards;
 }
 
-#sms {
-  opacity: 0;
-  -webkit-animation: sms 1s ease-in forwards;
-          animation: sms 1s ease-in forwards;
-}
-
-#whatsapp {
-  opacity: 0;
-  -webkit-animation: whatsapp 1s ease-in forwards 0.3s;
-          animation: whatsapp 1s ease-in forwards 0.3s;
-}
-
-#email {
-  opacity: 0;
-  -webkit-animation: email 1s ease-in forwards 0.6s;
-          animation: email 1s ease-in forwards 0.6s;
-}
-
-#phone {
-  opacity: 0;
-  -webkit-animation: phone 1s ease-in forwards 0.9s;
-          animation: phone 1s ease-in forwards 0.9s;
-}
-
-@-webkit-keyframes sms {
+@-webkit-keyframes icons {
   0% {
     opacity: 0;
   }
@@ -455,61 +433,7 @@ strong {
   }
 }
 
-@keyframes sms {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes whatsapp {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes whatsapp {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes email {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes email {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes phone {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes phone {
+@keyframes icons {
   0% {
     opacity: 0;
   }
@@ -602,10 +526,10 @@ strong {
     min-height: 40vh;
   }
   #h1-h2 {
-    color: #2b2a2a44;
+    color: #2b2a2a00;
     text-align: left;
-    -webkit-animation: shadow 1.5s ease-in forwards;
-            animation: shadow 1.5s ease-in forwards;
+    -webkit-animation: shadow 1.2s ease-in forwards;
+            animation: shadow 1.2s ease-in forwards;
     text-shadow: none;
   }
   #h1-h2 h1 {
@@ -617,17 +541,11 @@ strong {
     font-size: 1.2rem;
   }
   @-webkit-keyframes shadow {
-    0% {
-      text-shadow: none;
-    }
     33% {
       text-shadow: 4px 4px 16px cyan;
     }
     66% {
       text-shadow: none;
-    }
-    75% {
-      color: cyan;
     }
     100% {
       color: cyan;
@@ -635,17 +553,11 @@ strong {
     }
   }
   @keyframes shadow {
-    0% {
-      text-shadow: none;
-    }
     33% {
       text-shadow: 4px 4px 16px cyan;
     }
     66% {
       text-shadow: none;
-    }
-    75% {
-      color: cyan;
     }
     100% {
       color: cyan;

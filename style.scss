@@ -153,7 +153,7 @@ nav {
   text-shadow: 2px 2px 2px whitesmoke;
   text-shadow: 0px 0px 2px whitesmoke;
   position: relative;
-  animation: nav 1.5s ease-in forwards;
+  animation: nav 1.4s ease-in forwards;
   transform: translateY(-40px);
 }
 
@@ -287,25 +287,9 @@ strong {
   display: flex;
   flex-direction: column;
   margin: 8px 8px 8px 8px;
-}
-#sms {
-  opacity: 0;
-  animation: sms 1s ease-in forwards;
-}
-#whatsapp {
-  opacity: 0;
-  animation: whatsapp 1s ease-in forwards 0.3s;
-}
-#email {
-  opacity: 0;
-  animation: email 1s ease-in forwards 0.6s;
-}
-#phone {
-  opacity: 0;
-  animation: phone 1s ease-in forwards 0.9s;
-}
+  animation: icons 1.2s ease-in forwards;
 
-@keyframes sms {
+@keyframes icons {
   0% {
     opacity: 0;
   }
@@ -313,29 +297,6 @@ strong {
     opacity: 1;
   }
 }
-@keyframes whatsapp {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes email {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes phone {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .icon {
