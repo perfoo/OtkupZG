@@ -14,7 +14,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: white;
+  background-color: aliceblue;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   overflow-x: hidden;
@@ -198,13 +198,13 @@ footer div {
 }
 
 footer div a {
-  color: white;
+  color: aliceblue;
   text-decoration: none;
   margin: 16px;
 }
 
 footer div a::after ::before {
-  color: white;
+  color: aliceblue;
 }
 
 footer div a:active {
@@ -216,8 +216,8 @@ nav {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  text-shadow: 2px 2px 2px whitesmoke;
-  text-shadow: 0px 0px 2px whitesmoke;
+  text-shadow: 2px 2px 2px aliceblue;
+  text-shadow: 0px 0px 2px aliceblue;
   position: relative;
   -webkit-animation: nav 1.4s ease-in forwards;
           animation: nav 1.4s ease-in forwards;
@@ -260,7 +260,7 @@ ul {
 
 nav li {
   display: inline-block;
-  border-left: white 1px solid;
+  border-left: aliceblue 1px solid;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -275,7 +275,7 @@ nav li:hover {
   background: rgba(92, 57, 69, 0.715);
   -webkit-box-shadow: 1px 2px 16px violet;
           box-shadow: 1px 2px 16px violet;
-  text-shadow: 1px 1px 4px white, 2px 2px 8px violet;
+  text-shadow: 1px 1px 4px aliceblue, 2px 2px 8px violet;
 }
 
 nav li a {
@@ -298,8 +298,8 @@ main {
 }
 
 strong {
-  -webkit-text-decoration: 2px underline white;
-          text-decoration: 2px underline white;
+  -webkit-text-decoration: 2px underline aliceblue;
+          text-decoration: 2px underline aliceblue;
 }
 
 #zalagaonica {
@@ -451,7 +451,7 @@ strong {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  color: white;
+  color: aliceblue;
   text-shadow: 1px 2px 8px black, 2px 4px 16px violet;
 }
 
@@ -498,7 +498,7 @@ strong {
 }
 
 #location {
-  background-color: white;
+  background-color: aliceblue;
   width: 100%;
   margin-bottom: 24px;
 }
@@ -640,7 +640,7 @@ button:active {
 }
 
 button:hover {
-  background-color: white;
+  background-color: aliceblue;
 }
 
 #hide {
@@ -648,7 +648,7 @@ button:hover {
 }
 
 .footer-ul {
-  color: white;
+  color: aliceblue;
   list-style: none;
 }
 

@@ -10,7 +10,7 @@
 body {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: $white;
   flex-wrap: nowrap;
   overflow-x: hidden;
   font-family: Geneva, Verdana, Tahoma, sans-serif;
@@ -25,9 +25,7 @@ header {
   min-height: 50vh;
   width: 100vw;
   background-color: $color-h1-dark;
-  background-image: linear-gradient(to top, rgb(16, 10, 51), transparent),
-    url("./img/otkup-zagreb-zalagaonica.webp");
-  // url("./img/otkup-zagreb-zalagaonica.jpg");
+  background-image: linear-gradient(to top, rgb(16, 10, 51), transparent),url("./img/otkup-zagreb-zalagaonica.webp");
   flex-direction: column;
   background-repeat: no-repeat;
   background-size: cover;
@@ -133,12 +131,12 @@ footer {
     justify-content: flex-start;
     align-items: flex-start;
     & a {
-      color: white;
+      color: $white;
       text-decoration: none;
       margin: 16px;
     }
     & a::after ::before {
-      color: white;
+      color: $white;
     }
     & a:active {
       color: black;
@@ -149,8 +147,8 @@ footer {
 nav {
   top: 0px;
   flex: 1;
-  text-shadow: 2px 2px 2px whitesmoke;
-  text-shadow: 0px 0px 2px whitesmoke;
+  text-shadow: 2px 2px 2px $white;
+  text-shadow: 0px 0px 2px $white;
   position: relative;
   animation: nav 1.4s ease-in forwards;
   transform: translateY(-40px);
@@ -174,7 +172,7 @@ ul {
 
 nav li {
   display: inline-block;
-  border-left: white 1px solid;
+  border-left: $white 1px solid;
   flex: 1;
   text-align: center;
   padding: 8px;
@@ -184,7 +182,7 @@ nav li {
   &:hover {
     background: rgba(92, 57, 69, 0.715);
     box-shadow: 1px 2px 16px $color-box-shadow;
-    text-shadow: 1px 1px 4px white, 2px 2px 8px $color-box-shadow;
+    text-shadow: 1px 1px 4px $white, 2px 2px 8px $color-box-shadow;
   }
 }
 
@@ -206,7 +204,7 @@ main {
 }
 
 strong {
-  text-decoration: 2px underline white;
+  text-decoration: 2px underline $white;
 }
 
 #zalagaonica {
@@ -303,7 +301,7 @@ strong {
   display: flex;
   flex-direction: column;
   text-align: center;
-  color: white;
+  color: $white;
   text-shadow: 1px 2px 8px black, 2px 4px 16px $color-box-shadow;
   &:hover {
     transform: translate(1px, 1px);
@@ -342,7 +340,7 @@ strong {
   }
 }
 #location {
-  background-color: white;
+  background-color: $white;
   width: 100%;
   margin-bottom: 24px;
 }
@@ -463,13 +461,13 @@ button:active {
   box-shadow: 2px 2px 16px $color-box-shadow;
 }
 button:hover {
-  background-color: white;
+  background-color: $white;
 }
 #hide {
   display: none;
 }
 .footer-ul {
-  color: white;
+  color: $white;
   list-style: none;
   & li {
     margin-top: 8px;
