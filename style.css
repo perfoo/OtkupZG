@@ -18,7 +18,7 @@ body {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   overflow-x: hidden;
-  font-family: Geneva, Verdana, Tahoma, sans-serif;
+  font-family: Prompt, Geneva, Verdana, Tahoma, sans-serif;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
