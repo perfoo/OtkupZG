@@ -347,8 +347,8 @@ strong {
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(cyan), color-stop(transparent), color-stop(transparent), color-stop(transparent), to(transparent));
-  background-image: linear-gradient(to top, cyan, transparent, transparent, transparent, transparent);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(cyan), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), to(transparent));
+  background-image: linear-gradient(to top, cyan, transparent, transparent, transparent, transparent, transparent, transparent, transparent);
   min-height: 280px;
   margin: 40px;
   -ms-flex-negative: 0;
