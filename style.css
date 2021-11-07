@@ -347,8 +347,8 @@ strong {
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(cyan), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), to(transparent));
-  background-image: linear-gradient(to top, cyan, transparent, transparent, transparent, transparent, transparent, transparent, transparent);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(cyan), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), to(transparent));
+  background-image: linear-gradient(to top, cyan, transparent, transparent, transparent, transparent, transparent, transparent);
   min-height: 280px;
   margin: 40px;
   -ms-flex-negative: 0;
@@ -381,8 +381,8 @@ strong {
 }
 
 .card img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 320px;
+  max-height: 155px;
   margin: 8px 0px;
 }
 
@@ -578,10 +578,15 @@ strong {
     margin: 24px 0px 24px 0px;
   }
   .card {
-    min-height: 240px;
+    min-height: 220px;
     margin: 16px;
     -ms-flex-negative: 1;
         flex-shrink: 1;
+  }
+  .card img {
+    max-width: 260px;
+    max-height: 120px;
+    margin: 8px 0px;
   }
   .text {
     margin: 8px;

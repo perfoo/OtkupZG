@@ -240,10 +240,9 @@ strong {
     transparent,
     transparent,
     transparent,
-    transparent,
     transparent
   );
-  //background-image: linear-gradient(to top, $color-h1, transparent ,transparent), url("./img/mobiteli.jpg");
+  //background-image: linear-gradient(to top, $color-h1, transparent ,transparent), url("./img/otkup-mobitela.webp");
   //min-width: 300px;
   min-height: 280px;
   margin: 40px;
@@ -264,8 +263,8 @@ strong {
     box-shadow: 0px 0px 4px $color-box-shadow;
   }
   & img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 320px;
+    max-height: 155px;
     margin: 8px 0px;
   }
 }
@@ -410,9 +409,14 @@ strong {
   }
   .card {
     //min-width: 320px;
-    min-height: 240px;
+    min-height: 220px;
     margin: 16px;
     flex-shrink: 1;
+    & img {
+    max-width: 260px;
+    max-height: 120px;
+    margin: 8px 0px;
+  }
   }
   .text {
     margin: 8px;
