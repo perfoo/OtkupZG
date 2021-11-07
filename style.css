@@ -307,9 +307,9 @@ strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -349,9 +349,8 @@ strong {
   background-color: white;
   background-image: -webkit-gradient(linear, left bottom, left top, from(cyan), color-stop(transparent), color-stop(transparent), color-stop(transparent), to(transparent));
   background-image: linear-gradient(to top, cyan, transparent, transparent, transparent, transparent);
-  min-width: 380px;
-  min-height: 320px;
-  margin: 32px;
+  min-height: 280px;
+  margin: 40px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -webkit-box-flex: 1;
@@ -579,8 +578,7 @@ strong {
     margin: 24px 0px 24px 0px;
   }
   .card {
-    min-width: 320px;
-    max-height: 320px;
+    min-height: 240px;
     margin: 16px;
     -ms-flex-negative: 1;
         flex-shrink: 1;
