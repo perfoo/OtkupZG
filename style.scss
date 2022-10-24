@@ -36,15 +36,19 @@ header {
 .flex {
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 1;
+  flex-grow: 2;
   flex-shrink: 1;
-  margin: 16px 6%;
+  margin: 16px 10%;
+  justify-content: center;
   & img {
     border-radius: 10px;
     margin: auto;
   }
   & div {
     margin: 0px;
+  }
+  & a {
+    margin: 8px 24px;
   }
 }
 
