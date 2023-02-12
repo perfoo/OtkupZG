@@ -144,14 +144,12 @@ header {
           flex-direction: row;
 }
 
-#karta img {
-  max-width: 18%;
-  max-height: 18%;
-  margin: 16px 8%;
+#karta p {
+  margin: 16px 12% 0px 12%;
 }
 
-#karta p {
-  margin: 16px 4px 16px 12%;
+#karta iframe {
+  margin-right: 10%;
 }
 
 @media screen and (max-width: 1120px) {
@@ -503,7 +501,7 @@ strong {
 }
 
 .text p {
-  margin: 8px 8%;
+  margin: 32px 8% 0px 8%;
   font-size: 105%;
   line-height: 1.4em;
 }
@@ -623,7 +621,7 @@ strong {
     margin: 8px;
   }
   .text p {
-    margin: 8px 24px;
+    margin: 32px 24px 0px 24px;
   }
   .text h2,
   .text h3 {
