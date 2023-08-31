@@ -365,7 +365,15 @@ strong {
   width: 100%;
   margin-bottom: 24px;
 }
-#otkup-mobitela {
+.mob-article .otkup-mobitela{
+  background-color: rgba(53, 251, 251, 0.559);
+  & h2,h3,h4 {
+    margin: 32px 2% 0px 8%;
+    text-shadow: 2px 2px 4px $white, 1px 1px 8px $white;
+}
+}
+.otkup-mobitela {
+  max-width: 100%;
   & p {
     margin: 8px 8%;
     font-size: 105%;
