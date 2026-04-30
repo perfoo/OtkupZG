@@ -44,10 +44,42 @@
           ] 
         }
         </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Koje podatke trebam poslati za otkup mobitela?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Za početnu procjenu pošaljite marku, model, količinu memorije, starost, stanje uređaja, informaciju imate li račun, kutiju i punjač te okvirnu cijenu koju očekujete."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Trebam li odmah poslati slike mobitela?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Slike nisu potrebne u prvom kontaktu. Ako su potrebne za točniju procjenu, zatražit ćemo ih u odgovoru."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Kako šaljem ponudu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ponudu možete poslati putem WhatsAppa, SMS-a ili e-maila. Komunikacija porukama je najpraktičniji način za početnu procjenu."
+              }
+            }
+          ]
+        }
+        </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Otkup mobitela Zagreb - zalagaonica</title>
+    <title>Otkup mobitela Zagreb | iPhone, Samsung, Xiaomi | OtkupZG</title>
     <meta name="twitter:image" content="https://www.otkupzg.com/img/otkup-mobitela.jpg" />
     <meta property=og:title content="Otkup mobitela ZAGREB" />
     <meta property=og:url content="https://www.otkupzg.com/otkup-mobitela-zagreb.html" />
@@ -61,8 +93,8 @@
     <meta name="twitter:label1" content="Est. reading time" />
     <meta name="twitter:data1" content="6 minutes" />
     <link rel="canonical" href="https://www.otkupzg.com/otkup-mobitela-zagreb.html">
-    <meta name="description" content="Zalagaonica i otkup mobitela Zagreb - Otkup novijih i novih mobitela, svih poznatih marki (Apple, Samsung, Huawei...)">
-    <meta name="keywords" content="zalagaonica, zalagaonica zagreb, zalagaonica u zagrebu, zalog mobitela, otkup rabljenih mobitela, otkup mobitela, isplata odmah, brzi krediti">
+    <meta name="description" content="Otkup mobitela u Zagrebu: iPhone, Samsung, Xiaomi i drugi noviji uređaji. Pošaljite osnovne podatke porukom za procjenu i dogovor.">
+    <meta name="keywords" content="otkup mobitela Zagreb, otkup iPhone Zagreb, otkup Samsung mobitela, otkup Xiaomi mobitela, zalagaonica Zagreb, isplata odmah Zagreb">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -81,8 +113,17 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
+        <nav aria-label="Glavna navigacija">
+            <a class="brand" href="https://www.otkupzg.com/" aria-label="OtkupZG naslovna">
+                <span>OtkupZG</span>
+                <small>Zagreb</small>
+            </a>
+            <button class="menu-toggle" type="button" aria-label="Otvori izbornik" aria-expanded="false" aria-controls="site-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="site-menu">
                 <li><a href="https://www.otkupzg.com/">naslovna</a></li>
                 <li><a href="https://www.otkupzg.com/#about">o nama</a></li>
                 <li><a href="https://www.otkupzg.com/#location">lokacija</a></li>
@@ -92,24 +133,20 @@
         <div id="h1-h2-icons">
             <div id="h1-h2">
                 <h1>OTKUP MOBITELA <span>- Zagreb</span></h1>
-                <h2>otkup novih i zapakiranih, te ispravnih rabljenih mobitela</h2>
+                <h2>Pošaljite osnovne podatke o mobitelu porukom. Slike nisu potrebne u prvom kontaktu.</h2>
             </div>
             <div id="icons">
                 <div id="sms" class="icon">
                     <a href="sms:+385919577009"><img src="./img/zalagaonica-mobitela.png" alt="zalagaonica mobiteli" width="40" height="40"></a>
-                    <caption class="caption">sms</caption>
+                    <span class="caption">sms</span>
                 </div>
                 <div id="whatsapp" class="icon">
                     <a href="https://wa.me/+385919577009"><img src="./img/zalog-mobitela.png" alt="otkup mobitela zagreb" width="40" height="40"></a>
-                    <caption class="caption">whatsapp</caption>
+                    <span class="caption">whatsapp</span>
                 </div>
                 <div id="email" class="icon">
                     <a href="mailto:&#111;&#116;&#107;&#117;&#112;&#122;&#103;&#064;&#121;&#097;&#104;&#111;&#111;&#046;&#099;&#111;&#109;"><img src="./img/otkup-racunala.png" alt="zalagaonica zagreb" width="40" height="40"></a>
-                    <caption class="caption">e-mail</caption>
-                </div>
-                <div id="phone" class="icon">
-                    <a href="tel:+385919577009"><img src="./img/otkup-zg.png" alt="otkup mobitela" width="40" height="40"></a>
-                    <caption class="caption">poziv</caption>
+                    <span class="caption">e-mail</span>
                 </div>
             </div>
         </div>
@@ -118,8 +155,8 @@
         <div>
         <h2>Otkup mobitela Zagreb</h2>
         <p>Prodajete svoj stari, ili novi mobitel, tablet, ili nešto drugo? Ne možete prodati, neda vam se gubiti vrijeme na razne oglasnike, ili jednostavno ne možete pronaći kupca dovoljno brzo? Obratite nam se sa povjerenjem. <strong>Zalagaonica Zagreb</strong> garantira brzu, jednostavnu i ugodnu transakciju <em>otkupa mobitela</em>. Isplata je odmah, nakon provjere mobitela.</p>
-        <p> 
-            Kao što je već prije spomenuto, <strong>otkup mobitela</strong> vršimo samo na području Zagreba. Uglavnom u obzir uzimamo sve poznatije marke i modele za koje postoji neka potražnja. <p>Naravno, najveća potražnja je za novim i zapakiranim mobilnim uređajima. Takavi uređaji uvijek postižu najvišu moguću cijenu i najlakše se prodaju.</p>
+        <p>Kao što je već prije spomenuto, <strong>otkup mobitela</strong> vršimo samo na području Zagreba. Uglavnom u obzir uzimamo sve poznatije marke i modele za koje postoji neka potražnja.</p>
+            <p>Naravno, najveća potražnja je za novim i zapakiranim mobilnim uređajima. Takavi uređaji uvijek postižu najvišu moguću cijenu i najlakše se prodaju.</p>
             <p> Ako je mobitel otpakiran, to ne utječe puno na ponuđenu cijenu. Ipak takav uređaj vrijedi malo manje nego onaj original zapakiran (nije otvaran), te ima pripadajući i valjani račun.</p>
             <p>Kod korištenih mobitela bitno je fizičko stanje (očuvanost), ispravnost uređaja, starost samog mobitela, prisutnost originalne dodatne opreme (kutija, punjač, slušalice...sve ono što dolazi sa uređajem prilikom kupnje novog), stanje baterije itd.
             </p>
@@ -132,13 +169,14 @@
                 <li>starost mobitela (barem otprilike)</li>
                 <li>prisutnost računa - ima / nema?</li>
                 <li>prisutnost kutije, originalnog punjača itd.</li>
+                <li>okvirna cijena koju očekujete</li>
             </ul>
             </div>
             <img src="./img/otkup-mobitela-zagreb-zalagaonica.webp" alt="otkup mobitela" title="otkup mobitela u zagrebu" width="335" height="158">
             </div>
             <p>24h garantiramo svaku našu ponuđenu cijenu za otkup.</p>
+            <p>Slike nisu potrebne u prvom kontaktu. Ako su nam potrebne za točniju procjenu, zatražit ćemo ih u odgovoru.</p>
             <p>Neispravni i oštećeni mobiteli nemaju neku vrijednost jer jednostavno nema potražnje za takvim uređajima. Uglavnom je popravak skuplji od vrijednosti samog uređaja i samim time nije isplativ. Za takve uređaje su maksimalne ponude 10-20 €, jer <em>mooožda</em> se mogu iskoristiti neki dijelovi. Ali u pravilu, takvi uređaji skoro uvijek završavaju u elektroničkom otpadu.</p>
-        </p>
         </div>
     </main>
     <div class="mob-article">
@@ -163,6 +201,17 @@
         <p>Otkup mobitela u zalagaonici može biti najbolja opcija za vas ako želite brzo dobiti gotovinu, ili jednostavno ne želite uložiti svoje vrijeme i trud kako bi sami prodali mobitel. Ako vam je opet bitno postiči što veću cijenu za vaš uređaj, onda je najbolje uložiti truda i vremena da prodate uređaj sami. Prije donošenja odluke preporučljivo je odvagnuti sve prednosti i mane kako bi izabrali najbolju opciju za sebe. </p>
     </div>
     </div>
+    <section class="text faq">
+        <div>
+            <h2>Česta pitanja za otkup mobitela</h2>
+            <h3>Koje podatke trebam poslati?</h3>
+            <p>Marku, model, memoriju, starost, stanje uređaja, imate li račun, kutiju i punjač te okvirnu cijenu koju očekujete.</p>
+            <h3>Trebam li odmah poslati slike?</h3>
+            <p>Ne. Slike nisu potrebne u prvom kontaktu, ali ih možemo zatražiti ako nam trebaju za točniju procjenu.</p>
+            <h3>Kako je najbolje poslati ponudu?</h3>
+            <p>Najbolje putem WhatsAppa, SMS-a ili e-maila, kako bismo mogli odgovoriti konkretnom procjenom.</p>
+        </div>
+    </section>
     <div class="flex">
         <a href="./otkup-foto.html">Otkup Fotoaparata</a><a href="./otkup-laptopa.html">Otkup Laptop i Desktop
             Računala</a><a href="./otkup-tv.html">Otkup TV-a i HiFi uređaja</a><a href="./otkup-vozila.html">Otkup
@@ -171,8 +220,7 @@
 
     <div class="text">
         <button onclick="showP()">Uvjeti i pravila</button>
-        <p>
-            <ul id="hide">
+        <ul id="hide">
                 <li>Uvjeti i pravila korištenja vrijede za internetski portal www.otkupzg.com sa svim poddomenama i web stranicama te aplikacijama za mobilne telefone koji pripadaju domeni otkupzg.com, dalje u tekstu internetski portal OTKUP ZAGREB.</li>
                 <li>Stranica OTKUPZG.COM je u privatnom vlasništvu.</li>
                 <li>Pristupanjem ovim stranicama prihvaćate sva pravila i uvjete korištenja internetskog portala OTKUP ZAGREB. Zadržavamo pravo promjena, modifikacija i dopuna uvjeta korištenja ovih stranica u bilo kojem trenutku. Promjene stupaju na snagu u trenutku objave. Korisnik je dužan redovito čitati Uvjete i pravila korištenja te se smatra da je pristupanjem stranicama OTKUP ZAGREB upoznat s aktualnim pravilima i uvjetima njihova korištenja.</li>
@@ -185,7 +233,6 @@
                 <li>U svakom trenutku možemo odbiti otkupiti ponuđeni predmet bez dodatnog objašnjenja.</li>
                 <li>Svaka naša ponuda vrijedi 24h, nakon toga ne možemo garantirati istu cijenu.</li>
             </ul>
-        </p>
     </div>
     <ul class="share">
         <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.otkupzg.com/otkup-mobitela-zagreb.html"><img src="./icon/fb.webp" alt="zalagaonica-facebook-share"></a></li>
