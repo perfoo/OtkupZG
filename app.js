@@ -25,7 +25,11 @@ const mobileContactBar = document.querySelector(".mobile-contact-bar");
 const mobileStickyQuery = window.matchMedia("(max-width: 760px)");
 
 if (heroActions && mobileContactBar) {
+  let scrollTicking = false;
+
   const syncStickyContact = () => {
+    scrollTicking = false;
+
     if (!mobileStickyQuery.matches) {
       mobileContactBar.classList.remove("is-visible");
       return;
@@ -34,6 +38,13 @@ if (heroActions && mobileContactBar) {
     const actionsBox = heroActions.getBoundingClientRect();
     const actionsAreGone = actionsBox.bottom < 0;
     mobileContactBar.classList.toggle("is-visible", actionsAreGone);
+  };
+
+  const requestStickyContactSync = () => {
+    if (!scrollTicking) {
+      scrollTicking = true;
+      window.requestAnimationFrame(syncStickyContact);
+    }
   };
 
   if ("IntersectionObserver" in window) {
@@ -51,11 +62,18 @@ if (heroActions && mobileContactBar) {
 
     stickyObserver.observe(heroActions);
   } else {
-    window.addEventListener("scroll", syncStickyContact, { passive: true });
+    window.addEventListener("scroll", requestStickyContactSync, { passive: true });
+    window.addEventListener("resize", requestStickyContactSync, { passive: true });
   }
 
-  mobileStickyQuery.addEventListener("change", syncStickyContact);
-  syncStickyContact();
+  mobileStickyQuery.addEventListener("change", () => {
+    if (!mobileStickyQuery.matches) {
+      mobileContactBar.classList.remove("is-visible");
+      return;
+    }
+
+    requestStickyContactSync();
+  });
 }
 
 function showP() {

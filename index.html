@@ -2,15 +2,6 @@
 <html lang="hr-HR" xml:lang="hr-HR">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1XW8YYYYZK"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-1XW8YYYYZK');
-    </script>
-
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
@@ -77,8 +68,9 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:label1" content="Est. reading time" />
     <meta name="twitter:data1" content="6 minutes" />
+    <link rel="preload" as="image" href="./img/otkup-zagreb-zalagaonica.webp" type="image/webp" fetchpriority="high">
     <link rel="stylesheet" href="style.css">
-    <link rel="preload" as="image" href="./img/otkup-zagreb-zalagaonica.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" as="style"
         href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,700&display=swap" />
@@ -103,6 +95,7 @@
 
 <body>
     <header id="start">
+        <img class="hero-bg" src="./img/otkup-zagreb-zalagaonica.webp" width="1280" height="720" alt="" aria-hidden="true" fetchpriority="high" decoding="sync">
         <nav aria-label="Glavna navigacija">
             <a class="brand" href="#start" aria-label="OtkupZG naslovna">
                 <span>OtkupZG</span>
@@ -413,6 +406,18 @@
         </div> -->
         <p id="footer-date"></p>
     </footer>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-1XW8YYYYZK');
+        window.addEventListener('load', function () {
+            var analytics = document.createElement('script');
+            analytics.src = 'https://www.googletagmanager.com/gtag/js?id=G-1XW8YYYYZK';
+            analytics.async = true;
+            document.head.appendChild(analytics);
+        }, { once: true });
+    </script>
     <script defer src="./app.js"></script>
 </body>
 

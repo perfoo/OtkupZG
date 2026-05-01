@@ -53,8 +53,18 @@ header {
   color: #fff;
   background:
     linear-gradient(90deg, rgba(13, 20, 27, 0.98), rgba(13, 20, 27, 0.9) 48%, rgba(13, 20, 27, 0.68)),
-    linear-gradient(0deg, rgba(13, 20, 27, 0.42), rgba(13, 20, 27, 0.42)),
-    url("./img/otkup-zagreb-zalagaonica.webp") center / cover no-repeat;
+    linear-gradient(0deg, rgba(13, 20, 27, 0.42), rgba(13, 20, 27, 0.42));
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
 }
 
 nav {
@@ -571,20 +581,33 @@ body {
 
 header {
   position: relative;
+  overflow: hidden;
   min-height: min(780px, 92vh);
   isolation: isolate;
-  background:
-    linear-gradient(100deg, rgba(9, 14, 18, 0.98) 0%, rgba(13, 20, 25, 0.9) 42%, rgba(13, 20, 25, 0.46) 100%),
-    url("./img/otkup-zagreb-zalagaonica.webp") center / cover no-repeat;
+  background: #0d1419;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(100deg, rgba(9, 14, 18, 0.98) 0%, rgba(13, 20, 25, 0.9) 42%, rgba(13, 20, 25, 0.46) 100%);
 }
 
 header::after {
   content: "";
   position: absolute;
   inset: auto 0 0;
-  z-index: -1;
+  z-index: 1;
   height: 32%;
   background: linear-gradient(0deg, var(--bg), transparent);
+}
+
+nav,
+#h1-h2-icons {
+  position: relative;
+  z-index: 2;
 }
 
 nav {
@@ -1119,6 +1142,18 @@ main {
   display: none;
 }
 
+.trust-strip,
+.section-intro,
+#zalagaonica,
+.process,
+.text,
+#location,
+.share,
+footer {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 360px;
+}
+
 @media (min-width: 901px) {
   #h1-h2-icons {
     grid-template-columns: minmax(0, 1fr) 360px;
@@ -1138,7 +1173,10 @@ main {
 
   header {
     min-height: auto;
-    background-position: 58% center;
+  }
+
+  .hero-bg {
+    object-position: 58% center;
   }
 
   nav {
